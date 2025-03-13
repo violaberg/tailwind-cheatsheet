@@ -29,7 +29,7 @@
     </div>
     <div>
         <!--Navigation code here-->
-      <nav>
+      <nav class="w-full">
         <ul>
             <li>
                 <a href="index.html" aria-label="Takes to Home page">Home</a>
@@ -45,15 +45,29 @@
     </div>
       </div>
     </header>
-        <blockquote>
-        <p>"Looking for a good quote? Me too"</p>
-        </blockquote>
-    <section>
-      <h1>Tailwind v4.0</h1>
-      <p>
-        Some gibberish will be added here
-      </p>
-    </section>
+    <div class="container">
+        <h1>Tailwind v4.0</h1>
+            <blockquote>
+            <p>"Looking for a good quote? Me too"</p>
+            </blockquote>
+        <section>
+        <h2>Getting Started</h2>
+        <p>Adding Tailwind to your project has become a 2 second job. Few steps to follow from docs (https://tailwindcss.com/docs/installation/using-vite) and you're good to go.</p>
+        <div>Example using the easiest way Tailwind CLI:
+            <p>First thing first, install tailwindcss and tailwindcss/cli:</p>
+            <code>npm install tailwindcss @tailwindcss/cli</code>
+            <p>Add import to the top of your main css (input.css in this case) file:</p>
+            <code>@import "tailwindcss";</code>
+            <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check your file names and paths):</p>
+            <code>npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</code>
+            <p>or for Django run (check if static folder is in the root):</p>
+            <code>npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch --content './templates/**/*.html'
+            </code>
+            <p>Add compiled CSS file to head of your html file and you're good to go.</p>
+            <pre><code>&lt;link href="./output.css" rel="stylesheet"&gt;</code></pre>
+        </div>
+        </section>
+    </div>
     <footer>
       <ul>
         <li>
@@ -85,6 +99,7 @@
           </li>
     </ul>
     <p>&copy; Viola Bergere</p>
+    <button>Buy me a coffee</button>
     </footer>
   </body>
 </html>

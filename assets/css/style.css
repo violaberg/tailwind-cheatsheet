@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Add base styles */
+@layer base {
+    h1, h2, h3 {
+      @apply p-4;
+    }
+}
+
+/* Add custom styles inside the components layer
+@layer components {
+  }  */
+  
+  /* Add utilities if needed
+  @layer utilities {
+    .rotate-60 {
+      transform: rotate(60deg);
+    }
+  }  */

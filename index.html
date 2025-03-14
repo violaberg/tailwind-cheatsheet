@@ -1,105 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cheatsheet and components using Tailwind v4.0"
-    />
-    <meta
-      name="keywords"
-      content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI"
-    />
+    <meta name="description" content="Cheatsheet and components using Tailwind v4.0" />
+    <meta name="keywords"
+        content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="./assets/css/output.css" rel="stylesheet">
     <title>Tailwind CheatSheet and Components</title>
-  </head>
-  <body>
-    <header>
-      <div>
+</head>
+
+<body class="p-3">
+    <header class="w-full shadow p-2">
         <div>
-            <img src="#" alt="Logo"/>
+            <img src="#" alt="Logo" />
         </div>
         <div>
-        <a href="index.html" aria-label="Takes to Home page">
-        <h1>Ha?</h1>
-        </a>
-    </div>
-    <div>
+            <a href="index.html" aria-label="Takes to Home page">
+                <h1>Ha?</h1>
+            </a>
+        </div>
         <!--Navigation code here-->
-      <nav class="w-full">
-        <ul>
-            <li>
-                <a href="index.html" aria-label="Takes to Home page">Home</a>
-            </li>
-          <li>
-            <a href="cheatsheet.html" aria-label="Takes to Cheatsheet page">Cheatsheet</a>
-          </li>
-          <li>
-            <a href="components.html" aria-label="Takes to Components page">Components</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-      </div>
+        <nav>
+            <ul class="flex justify-center text-xl uppercase gap-4">
+                <li>
+                    <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="cheatsheet.html" aria-label="Takes to Cheatsheet page">Cheatsheet</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="components.html" aria-label="Takes to Components page">Components</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <h1>Tailwind v4.0</h1>
-            <blockquote>
-            <p>"Looking for a good quote? Me too"</p>
+    <main class="flex justify-center">
+        <div class="container">
+            <h1 class="text-center text-5xl">Tailwind v4.0</h1>
+            <blockquote class="text-center">
+                <p>"Design faster, build smarter.</p>
+                <p>A curated collection of Tailwind CSS components, templates and a cheatsheet — because great UI should
+                    be effortless."</p>
             </blockquote>
-        <section>
-        <h2>Getting Started</h2>
-        <p>Adding Tailwind to your project has become a 2 second job. Few steps to follow from docs (https://tailwindcss.com/docs/installation/using-vite) and you're good to go.</p>
-        <div>Example using the easiest way Tailwind CLI:
-            <p>First thing first, install tailwindcss and tailwindcss/cli:</p>
-            <code>npm install tailwindcss @tailwindcss/cli</code>
-            <p>Add import to the top of your main css (input.css in this case) file:</p>
-            <code>@import "tailwindcss";</code>
-            <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check your file names and paths):</p>
-            <code>npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</code>
-            <p>or for Django run (check if static folder is in the root):</p>
-            <code>npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch --content './templates/**/*.html'
+            <section>
+                <h2 class="text-center text-3xl">Getting Started</h2>
+                <p>Adding Tailwind to your project has become a 2 second job. Few steps to follow from docs
+                    (https://tailwindcss.com/docs/installation/using-vite) and you're good to go.</p>
+                <div>Example using the easiest way Tailwind CLI:
+                    <p>First thing first, install tailwindcss and tailwindcss/cli:</p>
+                    <code>npm install tailwindcss @tailwindcss/cli</code>
+                    <p>Add import to the top of your main css (input.css in this case) file:</p>
+                    <code>@import "tailwindcss";</code>
+                    <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check your
+                        file names and paths):</p>
+                    <code>npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</code>
+                    <p>or for Django run (check if static folder is in the root):</p>
+                    <code>npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch --content './templates/**/*.html'
             </code>
-            <p>Add compiled CSS file to head of your html file and you're good to go.</p>
-            <pre><code>&lt;link href="./output.css" rel="stylesheet"&gt;</code></pre>
+                    <p>Add compiled CSS file to head of your html file.</p>
+                    <pre><code>&lt;link href="./output.css" rel="stylesheet"&gt;</code></pre>
+                    <p>Congrats, you have finished setting up Tailwind v4.0</p>
+                    <p>For other setup ways head over to Tailwind website.</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-center text-3xl">Adding custom styles</h2>
+                <p>Since Tailwind v4.0 does not use a config file by default, you can override styles directly inside
+                    your main css file using @layer</p>
+                <div>
+                    <p>@layer base → For modifying default styles like h1, p, etc.</p>
+                    <p>@layer components → For reusable custom classes like .btn-primary.</p>
+                    <p>@layer utilities → For adding extra utility classes.</p>
+                </div>
+            </section>
         </div>
-        </section>
-    </div>
-    <footer>
-      <ul>
-        <li>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener"
-            aria-label="# (opens in a new tab)"
-            ></i
-          >Github</a>
-        </li>
-        <li>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener"
-            aria-label="# (opens in a new tab)"
-            ></i
-          >LinkedIn</a>
-        </li>
-        <li>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener"
-              aria-label="# (opens in a new tab)"
-              ></i
-            >Portfolio</a>
-          </li>
-    </ul>
-    <p>&copy; Viola Bergere</p>
-    <button>Buy me a coffee</button>
+    </main>
+    <footer class="flex shadow justify-center p-2">
+        <div class="grid grid-rows-3">
+            <div>&copy; Viola Bergere</div>
+            <ul class="flex gap-4">
+                <li class="inline-flex">
+                    <a href="#" target="_blank" rel="noopener" aria-label="# (opens in a new tab)"></i>Github</a>
+                </li>
+                <li class="inline-flex">
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="# (opens in a new tab)"></i>LinkedIn</a>
+                </li>
+                <li class="inline-flex">
+                    <a href="#" target="_blank" rel="noopener" aria-label="# (opens in a new tab)"></i>Portfolio</a>
+                </li>
+            </ul>
+            <div>
+                <a class="btn btn-primary" href="#">Buy me a coffee</a>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

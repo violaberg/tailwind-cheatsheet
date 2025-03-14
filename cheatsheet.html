@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cheatsheet and components using Tailwind v4.0" />
+    <meta name="keywords"
+        content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI" />
+
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>Tailwind CheatSheet and Components</title>
+</head>
+
+<body class="p-3">
+    <header class="w-full shadow p-2">
+        <div>
+            <img src="#" alt="Logo" />
+        </div>
+        <div>
+            <a href="index.html" aria-label="Takes to Home page">
+                <h1>Ha?</h1>
+            </a>
+        </div>
+        <!--Navigation code here-->
+        <nav>
+            <ul class="flex justify-center text-xl uppercase gap-4">
+                <li>
+                    <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="cheatsheet.html" aria-label="Takes to Cheatsheet page">Cheatsheet</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="components.html" aria-label="Takes to Components page">Components</a>
+                </li>
+                <li>
+                    <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex justify-center">
+        <div class="container">
+            <h1 class="text-center text-5xl">CheatSheet</h1>
+            <div class="grid grid-cols-3 grid-rows-3 gap-3">
+                <div class="accordion divide-neutral/20 divide-y shadow p-2">
+                    <div class="accordion-item" id="aspect-ratio">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="aspect-ratio-collapse" aria-expanded="false">
+                            aspect-ratio
+                        </button>
+                        <div id="aspect-ratio-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="aspect-ratio" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="columns">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="columns-collapse" aria-expanded="false">
+                            columns
+                        </button>
+                        <div id="columns-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="columns" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="break-after">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="break-after-collapse" aria-expanded="false">
+                            break-after
+                        </button>
+                        <div id="break-after-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="break-after" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="break-before">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="break-before-collapse" aria-expanded="false">
+                            break-before
+                        </button>
+                        <div id="break-before-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="break-before" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="break-inside">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="break-inside-collapse" aria-expanded="false">
+                            break-inside
+                        </button>
+                        <div id="break-inside-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="break-inside" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="box-decoration-break">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="box-decoration-break-collapse" aria-expanded="false">
+                            box-decoration-break
+                        </button>
+                        <div id="box-decoration-break-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="box-decoration-break" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="box-sizing">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="box-sizing-collapse" aria-expanded="false">
+                            box-sizing
+                        </button>
+                        <div id="box-sizing-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="box-sizing" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="display">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="display-collapse" aria-expanded="false">
+                            display
+                        </button>
+                        <div id="display-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="display" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="float">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="float-collapse" aria-expanded="false">
+                            float
+                        </button>
+                        <div id="float-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="float" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="clear">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="clear-collapse" aria-expanded="false">
+                            clear
+                        </button>
+                        <div id="clear-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="clear" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="isolation">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="isolation-collapse" aria-expanded="false">
+                            isolation
+                        </button>
+                        <div id="isolation-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="isolation" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="object-fit">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="object-fit-collapse" aria-expanded="false">
+                            object-fit
+                        </button>
+                        <div id="object-fit-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="object-fit" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="object-position">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="object-position-collapse" aria-expanded="false">
+                            object-position
+                        </button>
+                        <div id="object-position-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="object-position" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="overflow">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="overflow-collapse" aria-expanded="false">
+                            overflow
+                        </button>
+                        <div id="overflow-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="overflow" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="overscroll-behavior">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="overscroll-behavior-collapse" aria-expanded="false">
+                            overscroll-behavior
+                        </button>
+                        <div id="overscroll-behavior-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="overscroll-behavior" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="position">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="position-collapse" aria-expanded="false">
+                            position
+                        </button>
+                        <div id="position-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="position" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="top/right/bottom/left">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="top/right/bottom/left-collapse" aria-expanded="false">
+                            top/right/bottom/left
+                        </button>
+                        <div id="top/right/bottom/left-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="top/right/bottom/left" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="visibility">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="visibility-collapse" aria-expanded="false">
+                            visibility
+                        </button>
+                        <div id="visibility-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="visibility" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="z-index">
+                        <button class="accordion-toggle text-start w-full p-2 font-medium bg-neutral-800 text-white"
+                            aria-controls="z-index-collapse" aria-expanded="false">
+                            z-index
+                        </button>
+                        <div id="z-index-collapse"
+                            class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
+                            aria-labelledby="z-index" role="region">
+                            this is content that should be hidden by default
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex shadow justify-center p-2">
+        <div class="grid grid-rows-3">
+            <div>&copy; Viola Bergere</div>
+            <ul class="flex gap-4">
+                <li class="inline-flex">
+                    <a href="#" target="_blank" rel="noopener" aria-label="# (opens in a new tab)"></i>Github</a>
+                </li>
+                <li class="inline-flex">
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="# (opens in a new tab)"></i>LinkedIn</a>
+                </li>
+                <li class="inline-flex">
+                    <a href="#" target="_blank" rel="noopener" aria-label="# (opens in a new tab)"></i>Portfolio</a>
+                </li>
+            </ul>
+            <div>
+                <a class="btn btn-primary" href="#">Buy me a coffee</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll(".accordion-toggle").forEach(button => {
+            button.addEventListener("click", () => {
+                const content = button.nextElementSibling;
+                const isOpen = button.getAttribute("aria-expanded") === "true";
+
+                button.setAttribute("aria-expanded", !isOpen);
+                content.style.maxHeight = isOpen ? "0px" : content.scrollHeight + "px";
+            });
+        });
+    </script>
+</body>
+
+</html>

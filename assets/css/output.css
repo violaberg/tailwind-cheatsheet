@@ -19,6 +19,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -198,6 +199,12 @@
       max-width: 96rem;
     }
   }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .flex {
     display: flex;
   }
@@ -221,6 +228,9 @@
   }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .justify-center {
     justify-content: center;
@@ -252,6 +262,18 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
   .text-center {
     text-align: center;
   }
@@ -278,6 +300,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -286,6 +312,10 @@
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_4px_8px_rgba\(0\,0\,0\,0\.2\)\] {
+    --tw-shadow: 0 4px 8px var(--tw-shadow-color, rgba(0,0,0,0.2));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .transition-all {
@@ -298,7 +328,6 @@
     transition-duration: 300ms;
   }
 }
-@layer theme, base, components, utilities;
 @layer theme {
   :root {
     --color-white: #FFFFFF;
@@ -320,6 +349,12 @@
     font-weight: 500;
     padding: 1rem;
   }
+  section {
+    background: linear-gradient(90deg, hsla(149, 86%, 77%, 1) 40%, hsla(284, 75%, 54%, 1) 80%);
+  }
+  .card {
+    background-color: var(--color-white);
+  }
 }
 @layer utilities {
   .gradient-text {
@@ -327,6 +362,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 }
 @property --tw-divide-y-reverse {

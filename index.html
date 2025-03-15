@@ -10,7 +10,6 @@
         content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI" />
 
     <link href="./assets/css/output.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
     <title>Tailwind CheatSheet,Components and Templates</title>
 </head>
 
@@ -42,86 +41,109 @@
             </ul>
         </nav>
     </header>
-    <main class="flex justify-center">
+    <main class="flex justify-center py-4">
         <div class="container">
             <h1 class="gradient-text text-center text-5xl">Tailwind v4.0</h1>
-            <blockquote class="text-center">
+            <blockquote class="text-center pb-4">
                 <p>"Design faster, build smarter.</p>
                 <p>A curated collection of Tailwind CSS components, templates and a cheatsheet — because great UI should
                     be effortless."</p>
             </blockquote>
-            <section>
-                <h2 class="text-center text-3xl">Getting Started</h2>
-                <p>Adding Tailwind to your project has become a 2 second job. Few steps to follow from docs
-                    (https://tailwindcss.com/docs/installation/using-vite) and you're good to go.</p>
-                <div>Example using the easiest way Tailwind CLI:
-                    <p>First thing first, install tailwindcss and tailwindcss/cli:</p>
-                    <code>npm install tailwindcss @tailwindcss/cli</code>
-                    <p>Add import to the top of your main css (input.css in this case) file:</p>
-                    <code>@import "tailwindcss";</code>
-                    <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check your
-                        file names and paths):</p>
-                    <code>npx @tailwindcss/cli -i ./path/to/input.css -o ./src/output.css --watch</code>
-                    <p>or for Django run (check if static folder is in the root):</p>
-                    <code>npx tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch --content './templates/**/*.html'
-            </code>
-                    <p>Add compiled CSS file and your main CSS file to head of your html file.</p>
-                    <pre><code>&lt;link href="./path/to/output.css" rel="stylesheet"&gt;</code></pre>
-                    <pre><code>&lt;link href="./path/to/input.css" rel="stylesheet"&gt;</code></pre>
-                    <p>Extra step to make your life easier!</p>
-                    <p>To avoid running full command every time you start developing or need to run build, add this to
-                        your package.json file (check your file path obviously):</p>
-                    <code>"scripts": {
+            <section class="shadow p-2 my-3">
+                <div class="card shadow p-2">
+                    <h2 class="text-center text-3xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3">Getting Started</h2>
+                    <div class="shadow p-2">
+                        <p>Adding Tailwind to your project has become a 2 second job. Few steps to follow from docs
+                            (https://tailwindcss.com/docs/installation/using-vite) and you're good to go.</p>
+                        <div>Example using the easiest way Tailwind CLI:
+                            <p>First thing first, install tailwindcss and tailwindcss/cli:</p>
+                            <code>npm install tailwindcss @tailwindcss/cli</code>
+                            <p>Add import to the top of your main css (input.css in this case) file:</p>
+                            <code>@import "tailwindcss";</code>
+                            <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check
+                                your
+                                file names and paths):</p>
+                            <code>npx @tailwindcss/cli -i ./path/to/input.css -o .path/to/output.css --watch</code>
+                            <p>or for Django run (check if static folder is in the root):</p>
+                            <code>npx tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch --content './templates/**/*.html'</code>
+                            <p>Add compiled CSS file to head of your html file.</p>
+                            <pre><code>&lt;link href="./path/to/output.css" rel="stylesheet"&gt;</code></pre>
+                            <p>Extra step to make your life easier!</p>
+                            <p>To avoid running full command every time you start developing or need to run build, add
+                                this
+                                to
+                                your package.json file (check your file path obviously):</p>
+                            <code>"scripts": {
                             "build:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css",
                             "watch:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch"}
                     </code>
-                    <p>Now you can use <code>npm run build:css</code> or <code>npm run watch:css</code></p>
-                    <h3  class="text-center text-2xl">Build vs Watch Mode</h3>
-                    <div class="flex justify-center">
-                        <div class="card inline-flex">
-                            <div class="card-title text-center text-xl">Build Mode</div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>One-time operation: When you run npm run build:css, Tailwind processes your CSS
-                                        file once and generates the output file.</li>
-                                    <li>Manual triggering: You need to manually run the command again every time you
-                                        make changes to your CSS.</li>
-                                    <li>Best for: Production deployment or when you're done with development and want to
-                                        generate the final CSS file.</li>
-                                </ul>
+                            <p>Now you can use <code>npm run build:css</code> or <code>npm run watch:css</code></p>
+                        </div>
+                        <h3 class="text-center text-2xl shadow py-2 my-3">Build vs Watch Mode</h3>
+                        <div class="flex justify-center gap-4">
+                            <div class="card flex flex-col shadow p-2">
+                                <div class="card-title text-center text-xl font-semibold">Build Mode</div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li><span class="font-semibold">One-time operation:</span> When you run npm run
+                                            build:css, Tailwind processes your
+                                            CSS
+                                            file once and generates the output file.</li>
+                                        <li><span class="font-semibold">Manual triggering:</span> You need to manually
+                                            run the command again every time you
+                                            make changes to your CSS.</li>
+                                        <li><span class="font-semibold">Best for:</span> Production deployment or when
+                                            you're done with development and
+                                            want to
+                                            generate the final CSS file.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card flex flex-col shadow p-2">
+                                <div class="card-title text-center text-xl font-semibold">Watch Mode</div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li><span class="font-semibold">Continuous operation:</span> When you run npm
+                                            run watch:css, Tailwind starts a
+                                            process
+                                            that stays running in your terminal.</li>
+                                        <li><span class="font-semibold">Automatic detection:</span> It constantly
+                                            monitors your input CSS file (and any
+                                            files
+                                            referenced by your Tailwind configuration).</li>
+                                        <li><span class="font-semibold">Automatic rebuilding:</span> Whenever it detects
+                                            a change in any of these files, it
+                                            automatically rebuilds your CSS without requiring manual intervention.</li>
+                                        <li><span class="font-semibold">Best for:</span> Active development when you're
+                                            frequently changing your CSS files.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="card inline-flex">
-                            <div class="card-title text-center text-xl">Watch Mode</div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Continuous operation: When you run npm run watch:css, Tailwind starts a process
-                                        that stays running in your terminal.</li>
-                                    <li>Automatic detection: It constantly monitors your input CSS file (and any files
-                                        referenced by your Tailwind configuration).</li>
-                                    <li>Automatic rebuilding: Whenever it detects a change in any of these files, it
-                                        automatically rebuilds your CSS without requiring manual intervention.</li>
-                                    <li>Best for: Active development when you're frequently changing your CSS files.
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="py-2">
+                            <p>During development, you would usually want to start watch mode in a terminal and
+                                leave it running while you work. This saves you time and updates every css change
+                                automatically while you develop.</p>
                         </div>
-                        <p>During development, you would usually want to start watch mode in a terminal and leave
-                            it running while you work. This saves you time and updates every css change automatically
-                            while you develop.</p>
+                        <p>Congrats, you have finished setting up Tailwind v4.0</p>
+                        <p>For other setup ways head over to Tailwind website.</p>
                     </div>
-                    <p>Congrats, you have finished setting up Tailwind v4.0</p>
-                    <p>For other setup ways head over to Tailwind website.</p>
                 </div>
             </section>
-            <section>
-                <h2 class="text-center text-3xl">Adding custom styles</h2>
-                <p>Since Tailwind v4.0 does not use a config file by default, you can override styles directly inside
-                    your main css file using @layer</p>
-                <div>
-                    <p>@layer base → For modifying default styles like h1, p, etc.</p>
-                    <p>@layer components → For reusable custom classes like .btn-primary.</p>
-                    <p>@layer utilities → For adding extra utility classes.</p>
+            <section class="shadow p-2">
+                <div class="card shadow p-2">
+                    <h2 class="text-center text-3xl shadow py-2 mb-3">Adding Custom Styles</h2>
+                    <div class="shadow p-2">
+                        <p>Since Tailwind v4.0 does not use a config file by default, you can override styles directly
+                            inside
+                            your main css file using @layer</p>
+                        <div>
+                            <p>@layer base → For modifying default styles like h1, p, etc.</p>
+                            <p>@layer components → For reusable custom classes like .btn-primary.</p>
+                            <p>@layer utilities → For adding extra utility classes.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -133,22 +155,22 @@
                 <li class="inline-flex">
                     <a href="https://github.com/violaberg" target="_blank" rel="noopener"
                         aria-label="Opens Viola's Github profile in a new tab"><i
-                            class="fa-brands fa-github text-2xl"></i></a>
+                            class="fa-brands fa-github text-3xl"></i></a>
                 </li>
                 <li class="inline-flex">
                     <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener"
                         aria-label="Opens Viola's LinkedIn profile in a new tab"><i
-                            class="fa-brands fa-linkedin text-2xl"></i></a>
+                            class="fa-brands fa-linkedin text-3xl"></i></a>
                 </li>
                 <li class="inline-flex">
                     <a href="https://violab.tech/" target="_blank" rel="noopener"
                         aria-label="Opens Viola's portfolio website in a new tab"><i
-                            class="fa-solid fa-globe text-2xl"></i></a>
+                            class="fa-solid fa-globe text-3xl"></i></a>
                 </li>
             </ul>
             <div class="flex gap-4">
-                <a class="inline-flex btn btn-primary" href="#">Buy me a coffee</a>
-                <a class="inline-flex btn btn-primary" href="#">Report a bug</a>
+                <a class="inline-flex btn-primary p-2 font-semibold uppercase" href="#">Buy me a coffee</a>
+                <a class="inline-flex btn-primary p-2 font-semibold uppercase" href="#">Report a bug</a>
             </div>
         </div>
     </footer>

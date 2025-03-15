@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@layer theme, base, components, utilities;
 
 @layer theme {
     :root {
@@ -24,6 +23,12 @@
         font-weight: 500;
         padding: 1rem;
     }
+    section {
+        background: linear-gradient(90deg, hsla(149, 86%, 77%, 1) 40%, hsla(284, 75%, 54%, 1) 80%);
+    }
+    .card {
+        background-color: var(--color-white);
+    }
 }
 
 /* Custom styles inside the components layer
@@ -37,5 +42,8 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .shadow {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 }

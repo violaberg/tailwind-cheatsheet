@@ -1,11 +1,25 @@
 @import "tailwindcss";
+@layer theme, base, components, utilities;
 
-/* Add base styles */
-@layer base {
-    h1, h2, h3 {
-      @apply p-4;
+@layer theme {
+    :root {
+        --color-white: #fff;
+        --color-lightestGray: #F4F4F3;
+        --color-lightGray: #E2E2DD;
+        --color-darkGray: #484848;
+        --color-darkestGray: #242424;
+        --color-black: #202020;
+        --color-blue: #035AA0;
+        --color-teal: #92F7C3;
     }
 }
+
+/* Add base styles
+@layer base {
+    h1, h2, h3 {
+        padding: 2rem;
+    }
+} */
 
 /* Add custom styles inside the components layer
 @layer components {

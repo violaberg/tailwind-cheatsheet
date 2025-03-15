@@ -219,6 +219,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
@@ -266,6 +269,9 @@
   }
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);

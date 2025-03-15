@@ -3,7 +3,7 @@
 
 @layer theme {
     :root {
-        --color-white: #fff;
+        --color-white: #FFFFFF;
         --color-lightestGray: #F4F4F3;
         --color-lightGray: #E2E2DD;
         --color-darkGray: #484848;
@@ -14,12 +14,12 @@
     }
 }
 
-/* Add base styles
+/* Add base styles */
 @layer base {
-    h1, h2, h3 {
-        padding: 2rem;
+    body {
+        color: var(--color-black);
     }
-} */
+}
 
 /* Add custom styles inside the components layer
 @layer components {

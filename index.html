@@ -66,6 +66,48 @@
             </code>
                     <p>Add compiled CSS file to head of your html file.</p>
                     <pre><code>&lt;link href="./output.css" rel="stylesheet"&gt;</code></pre>
+                    <p>Extra step to make your life easier!</p>
+                    <p>To avoid running full command every time you start developing or need to run build, add this to
+                        your package.json file (check your file path obviously):</p>
+                    <code>"scripts": {
+                            "build:css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css",
+                            "watch:css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch"}
+                    </code>
+                    <p>Now you can use <code>npm run build:css</code> or <code>npm run watch:css</code></p>
+                    <h3  class="text-center text-2xl">Build vs Watch Mode</h3>
+                    <div class="flex justify-center">
+                        <div class="card inline-flex">
+                            <div class="card-title text-center text-xl">Build Mode</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>One-time operation: When you run npm run build:css, Tailwind processes your CSS
+                                        file once and generates the output file.</li>
+                                    <li>Manual triggering: You need to manually run the command again every time you
+                                        make changes to your CSS.</li>
+                                    <li>Best for: Production deployment or when you're done with development and want to
+                                        generate the final CSS file.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card inline-flex">
+                            <div class="card-title text-center text-xl">Watch Mode</div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Continuous operation: When you run npm run watch:css, Tailwind starts a process
+                                        that stays running in your terminal.</li>
+                                    <li>Automatic detection: It constantly monitors your input CSS file (and any files
+                                        referenced by your Tailwind configuration).</li>
+                                    <li>Automatic rebuilding: Whenever it detects a change in any of these files, it
+                                        automatically rebuilds your CSS without requiring manual intervention.</li>
+                                    <li>Best for: Active development when you're frequently changing your CSS files.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>During development, you would usually want to start watch mode in a terminal and leave
+                            it running while you work. This saves you time and updates every css change automatically
+                            while you develop.</p>
+                    </div>
                     <p>Congrats, you have finished setting up Tailwind v4.0</p>
                     <p>For other setup ways head over to Tailwind website.</p>
                 </div>
@@ -87,14 +129,19 @@
             <div class="text-center">&copy; Viola Bergere</div>
             <ul class="flex justify-center gap-4">
                 <li class="inline-flex">
-                    <a href="https://github.com/violaberg" target="_blank" rel="noopener" aria-label="Opens Viola's Github profile in a new tab"><i class="fa-brands fa-github text-2xl"></i></a>
+                    <a href="https://github.com/violaberg" target="_blank" rel="noopener"
+                        aria-label="Opens Viola's Github profile in a new tab"><i
+                            class="fa-brands fa-github text-2xl"></i></a>
                 </li>
                 <li class="inline-flex">
                     <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener"
-                        aria-label="Opens Viola's LinkedIn profile in a new tab"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                        aria-label="Opens Viola's LinkedIn profile in a new tab"><i
+                            class="fa-brands fa-linkedin text-2xl"></i></a>
                 </li>
                 <li class="inline-flex">
-                    <a href="https://violab.tech/" target="_blank" rel="noopener" aria-label="Opens Viola's portfolio website in a new tab"><i class="fa-solid fa-globe text-2xl"></i></a>
+                    <a href="https://violab.tech/" target="_blank" rel="noopener"
+                        aria-label="Opens Viola's portfolio website in a new tab"><i
+                            class="fa-solid fa-globe text-2xl"></i></a>
                 </li>
             </ul>
             <div class="flex gap-4">

@@ -58,7 +58,14 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .quote,
-    .copyright {
+    .dev {
+        font-family: var(--font-headings);
+    }
+    .logo-text {
+        background: linear-gradient(90deg, rgb(62, 114, 87) 40%, rgb(116, 32, 146) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: var(--font-headings);
     }
 }

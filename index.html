@@ -14,32 +14,34 @@
 </head>
 
 <body class="p-3">
-    <header class="w-full shadow p-2">
-        <div>
-            <img src="#" alt="Logo" />
-        </div>
-        <div>
-            <a href="index.html" aria-label="Takes to Home page">
-                <h1>Ha?</h1>
-            </a>
-        </div>
-        <!--Navigation code here-->
-        <nav>
-            <ul class="flex justify-center text-xl uppercase gap-4">
-                <li>
-                    <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
-                </li>
-                <li>
-                    <a class="inline-flex" href="cheatsheet.html" aria-label="Takes to Cheatsheet page">Cheatsheet</a>
-                </li>
-                <li>
-                    <a class="inline-flex" href="components.html" aria-label="Takes to Components page">Components</a>
-                </li>
-                <li>
-                    <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="w-full shadow px-2 py-4">
+            <!--Navigation code here-->
+            <nav class="flex flex-row items-center justify-center py-4">
+                <div>
+                    <img src="#" alt="Logo" />
+                </div>
+                <div>
+                    <a href="index.html" aria-label="Takes to Home page">
+                        <h1>Ha?</h1>
+                    </a>
+                </div>
+                <ul class="flex justify-center text-xl uppercase gap-4">
+                    <li>
+                        <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
+                    </li>
+                    <li>
+                        <a class="inline-flex" href="cheatsheet.html"
+                            aria-label="Takes to Cheatsheet page">Cheatsheet</a>
+                    </li>
+                    <li>
+                        <a class="inline-flex" href="components.html"
+                            aria-label="Takes to Components page">Components</a>
+                    </li>
+                    <li>
+                        <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <main class="flex justify-center py-4">
         <div class="container">
@@ -148,10 +150,10 @@
             </section>
         </div>
     </main>
-    <footer class="flex shadow justify-center p-2">
+    <footer class="shadow justify-center p-2">
         <div class="grid grid-rows-3">
-            <div class="text-center">&copy; Viola Bergere</div>
-            <ul class="flex justify-center gap-4">
+            <div class="text-center pt-2">&copy; Viola Bergere</div>
+            <ul class="flex justify-center items-center gap-4">
                 <li class="inline-flex">
                     <a href="https://github.com/violaberg" target="_blank" rel="noopener"
                         aria-label="Opens Viola's Github profile in a new tab"><i
@@ -168,7 +170,7 @@
                             class="fa-solid fa-globe text-3xl"></i></a>
                 </li>
             </ul>
-            <div class="flex gap-4">
+            <div class="flex justify-center gap-4">
                 <a class="inline-flex btn-primary p-2 font-semibold uppercase" href="#">Buy me a coffee</a>
                 <a class="inline-flex btn-primary p-2 font-semibold uppercase" href="#">Report a bug</a>
             </div>

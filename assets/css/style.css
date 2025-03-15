@@ -29,6 +29,10 @@
     .card {
         background-color: var(--color-white);
     }
+    header,
+    footer {
+        background: linear-gradient(90deg, hsla(149, 86%, 77%, 0.5) 40%, hsla(284, 75%, 54%, 0.5) 80%);
+    }
 }
 
 /* Custom styles inside the components layer

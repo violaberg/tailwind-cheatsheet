@@ -11,6 +11,7 @@
         --color-black: #202020;
         --color-blue: #035AA0;
         --color-teal: #92F7C3;
+        --color-purple: #B330E1;
     }
 }
 
@@ -19,15 +20,22 @@
     body {
         color: var(--color-black);
     }
+    h1, h2, h3 {
+        font-weight: 500;
+        padding: 1rem;
+    }
 }
 
-/* Add custom styles inside the components layer
+/* Custom styles inside the components layer
 @layer components {
   }  */
   
-  /* Add utilities if needed
-  @layer utilities {
-    .rotate-60 {
-      transform: rotate(60deg);
+  /* Utilities */
+@layer utilities {
+    .gradient-text {
+        background: linear-gradient(90deg, hsla(149, 86%, 77%, 1) 40%, hsla(284, 75%, 54%, 1) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-  }  */
+}

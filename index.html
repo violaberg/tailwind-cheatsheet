@@ -10,7 +10,8 @@
         content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI" />
 
     <link href="./assets/css/output.css" rel="stylesheet">
-    <title>Tailwind CheatSheet and Components</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Tailwind CheatSheet,Components and Templates</title>
 </head>
 
 <body class="p-3">
@@ -43,7 +44,7 @@
     </header>
     <main class="flex justify-center">
         <div class="container">
-            <h1 class="text-center text-5xl">Tailwind v4.0</h1>
+            <h1 class="gradient-text text-center text-5xl">Tailwind v4.0</h1>
             <blockquote class="text-center">
                 <p>"Design faster, build smarter.</p>
                 <p>A curated collection of Tailwind CSS components, templates and a cheatsheet — because great UI should
@@ -60,18 +61,19 @@
                     <code>@import "tailwindcss";</code>
                     <p>Run the CLI tool to scan source files for classes and build your CSS (make sure you check your
                         file names and paths):</p>
-                    <code>npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</code>
+                    <code>npx @tailwindcss/cli -i ./path/to/input.css -o ./src/output.css --watch</code>
                     <p>or for Django run (check if static folder is in the root):</p>
-                    <code>npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch --content './templates/**/*.html'
+                    <code>npx tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch --content './templates/**/*.html'
             </code>
-                    <p>Add compiled CSS file to head of your html file.</p>
-                    <pre><code>&lt;link href="./output.css" rel="stylesheet"&gt;</code></pre>
+                    <p>Add compiled CSS file and your main CSS file to head of your html file.</p>
+                    <pre><code>&lt;link href="./path/to/output.css" rel="stylesheet"&gt;</code></pre>
+                    <pre><code>&lt;link href="./path/to/input.css" rel="stylesheet"&gt;</code></pre>
                     <p>Extra step to make your life easier!</p>
                     <p>To avoid running full command every time you start developing or need to run build, add this to
                         your package.json file (check your file path obviously):</p>
                     <code>"scripts": {
-                            "build:css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css",
-                            "watch:css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch"}
+                            "build:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css",
+                            "watch:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch"}
                     </code>
                     <p>Now you can use <code>npm run build:css</code> or <code>npm run watch:css</code></p>
                     <h3  class="text-center text-2xl">Build vs Watch Mode</h3>

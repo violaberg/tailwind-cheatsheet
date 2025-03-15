@@ -10,37 +10,43 @@
         content="tailwind, cheatsheet, classes, styling, responsive, web development, components, UI" />
 
     <link href="./assets/css/output.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Tailwind CheatSheet,Components and Templates</title>
 </head>
 
 <body class="p-3">
-    <header class="w-full shadow p-2">
-        <div>
-            <img src="#" alt="Logo" />
-        </div>
-        <div>
-            <a href="index.html" aria-label="Takes to Home page">
-                <h1>Ha?</h1>
-            </a>
-        </div>
+    <header class="w-full shadow px-2 py-4">
         <!--Navigation code here-->
-        <nav>
+        <nav class="flex flex-row items-center justify-center py-4">
+            <div>
+                <img src="#" alt="Logo" />
+            </div>
+            <div>
+                <a href="index.html" aria-label="Takes to Home page">
+                    <h1>Ha?</h1>
+                </a>
+            </div>
             <ul class="flex justify-center text-xl uppercase gap-4">
                 <li>
                     <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
                 </li>
                 <li>
-                    <a class="inline-flex" href="cheatsheet.html" aria-label="Takes to Cheatsheet page">Cheatsheet</a>
+                    <a class="inline-flex" href="cheatsheet.html"
+                        aria-label="Takes to Cheatsheet page">Cheatsheet</a>
                 </li>
                 <li>
-                    <a class="inline-flex" href="components.html" aria-label="Takes to Components page">Components</a>
+                    <a class="inline-flex" href="components.html"
+                        aria-label="Takes to Components page">Components</a>
                 </li>
                 <li>
                     <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
                 </li>
             </ul>
         </nav>
-    </header>
+</header>
     <main class="flex justify-center py-4">
         <div class="container">
             <h1 class="gradient-text text-center text-5xl">Templates</h1>

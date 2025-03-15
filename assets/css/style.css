@@ -11,6 +11,8 @@
         --color-blue: #035AA0;
         --color-teal: #92F7C3;
         --color-purple: #B330E1;
+        --font-headings: "MuseoModerno", sans-serif;
+        --font-text: "Jura", sans-serif;
     }
 }
 
@@ -18,10 +20,15 @@
 @layer base {
     body {
         color: var(--color-black);
+        font-family: var(--font-text);
     }
-    h1, h2, h3 {
+    h1, h2, h3, nav {
+        font-family: var(--font-headings);
         font-weight: 500;
         padding: 1rem;
+    }
+    nav {
+        color: var(--color-darkGray);
     }
     section {
         background: linear-gradient(90deg, hsla(149, 86%, 77%, 1) 40%, hsla(284, 75%, 54%, 1) 80%);
@@ -49,5 +56,9 @@
     }
     .shadow {
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .quote,
+    .copyright {
+        font-family: var(--font-headings);
     }
 }

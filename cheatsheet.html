@@ -17,38 +17,38 @@
     <title>Tailwind CheatSheet,Components and Templates</title>
 </head>
 
-<body class="p-3">
+<body class="flex flex-col min-h-screen p-3">
     <header class="w-full shadow px-2 py-4">
         <!--Navigation code here-->
         <nav class="flex flex-row items-center justify-center py-4">
-            <div>
-                <img src="#" alt="Logo" />
-            </div>
-            <div>
+            <div class="flex flex-row items-center px-4">
+                <img class="h-12 p-0" src="./assets/logo-dark.png" alt="Logo" />
                 <a href="index.html" aria-label="Takes to Home page">
-                    <h1>Ha?</h1>
+                    <h1 class="logo-text text-4xl hover:scale-105">TailEase</h1>
                 </a>
             </div>
-            <ul class="flex justify-center text-xl uppercase gap-4">
+            <ul class="flex justify-center text-2xl gap-4">
                 <li>
-                    <a class="inline-flex" href="index.html" aria-label="Takes to Home page">Home</a>
+                    <a class="inline-flex px-4 hover:scale-105" href="index.html"
+                        aria-label="Takes to Home page">Home</a>
                 </li>
                 <li>
-                    <a class="inline-flex" href="cheatsheet.html"
+                    <a class="inline-flex px-4 hover:scale-105" href="cheatsheet.html"
                         aria-label="Takes to Cheatsheet page">Cheatsheet</a>
                 </li>
                 <li>
-                    <a class="inline-flex" href="components.html"
+                    <a class="inline-flex px-4 hover:scale-105" href="components.html"
                         aria-label="Takes to Components page">Components</a>
                 </li>
                 <li>
-                    <a class="inline-flex" href="templates.html" aria-label="Takes to Templates page">Templates</a>
+                    <a class="inline-flex px-4 hover:scale-105" href="templates.html"
+                        aria-label="Takes to Templates page">Templates</a>
                 </li>
             </ul>
         </nav>
-</header>
-    <main class="flex justify-center py-4 text-lg/7">
-        <div class="container">
+    </header>
+    <main class="flex-1 justify-center py-4 text-lg/7">
+        <div class="container mx-auto">
             <h1 class="gradient-text text-center text-5xl">CheatSheet</h1>
             <div class="grid grid-cols-3 grid-rows-3 gap-3">
                 <div class="accordion divide-neutral/20 divide-y shadow p-2">
@@ -265,24 +265,33 @@
             </div>
         </div>
     </main>
-    <footer class="flex shadow justify-center p-2">
-        <div class="grid grid-rows-3">
-            <div class="text-center">&copy; Viola Bergere</div>
-            <ul class="flex justify-center gap-4">
+    <footer class="shadow justify-center p-2 text-lg/7">
+        <div class="grid grid-rows-4 py-2">
+            <div class="logo-text flex justify-center items-center text-2xl font-semibold">&copy; TailEase</div>
+            <div class="flex justify-center items-center">Developed by <span class="dev uppercase px-2">Viola
+                    Bergere</span></div>
+            <ul class="flex justify-center items-top gap-4">
                 <li class="inline-flex">
-                    <a href="https://github.com/violaberg" target="_blank" rel="noopener" aria-label="Opens Viola's Github profile in a new tab"><i class="fa-brands fa-github text-2xl"></i></a>
+                    <a href="https://github.com/violaberg" target="_blank" rel="noopener"
+                        aria-label="Opens Viola's Github profile in a new tab"><i
+                            class="fa-brands fa-github text-3xl hover:scale-125 text-shadow-sm"></i></a>
                 </li>
                 <li class="inline-flex">
                     <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener"
-                        aria-label="Opens Viola's LinkedIn profile in a new tab"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                        aria-label="Opens Viola's LinkedIn profile in a new tab"><i
+                            class="fa-brands fa-linkedin text-3xl hover:scale-125 text-shadow-sm"></i></a>
                 </li>
                 <li class="inline-flex">
-                    <a href="https://violab.tech/" target="_blank" rel="noopener" aria-label="Opens Viola's portfolio website in a new tab"><i class="fa-solid fa-globe text-2xl"></i></a>
+                    <a href="https://violab.tech/" target="_blank" rel="noopener"
+                        aria-label="Opens Viola's portfolio website in a new tab"><i
+                            class="fa-solid fa-globe text-3xl hover:scale-125 text-shadow-sm"></i></a>
                 </li>
             </ul>
-            <div class="flex gap-4">
-                <a class="inline-flex btn btn-primary" href="#">Buy me a coffee</a>
-                <a class="inline-flex btn btn-primary" href="#">Report a bug</a>
+            <div class="flex justify-center gap-4">
+                <a class="inline-flex btn-primary text-xl tracking-wide p-3 shadow hover:skew-3 text-shadow-sm"
+                    href="#">Buy me a coffee</a>
+                <a class="inline-flex btn-primary text-xl tracking-wide p-3 shadow hover:-skew-3 text-shadow-sm"
+                    href="#">Report a bug</a>
             </div>
         </div>
     </footer>

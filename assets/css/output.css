@@ -276,6 +276,9 @@
   .grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
+  .grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }

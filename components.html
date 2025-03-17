@@ -20,34 +20,54 @@
 </head>
 
 <body class="flex flex-col min-h-screen p-3">
-    <header class="w-full shadow px-2 py-4">
-        <!--Navigation code here-->
-        <nav class="flex flex-row items-center justify-center py-4">
-            <div class="flex flex-row items-center px-4">
-                <img class="h-12 p-0" src="./assets/logo-dark.png" alt="Logo" />
+    <header class="w-full shadow px-2 py-4 relative">
+        <!-- Navigation -->
+        <nav class="flex flex-row items-center justify-between lg:justify-center py-4 px-4">
+            <div class="flex flex-row items-center">
+                <img class="h-12 p-0" src="./assets/logo-dark.png" alt="Logo">
                 <a href="index.html" aria-label="Takes to Home page">
                     <h1 class="logo-text text-4xl hover:scale-105">TailEase</h1>
                 </a>
             </div>
-            <ul class="flex justify-center text-2xl gap-4">
-                <li>
-                    <a class="inline-flex px-4 hover:scale-105 navlink" href="index.html"
-                        aria-label="Takes to Home page">Home</a>
-                </li>
-                <li>
-                    <a class="inline-flex px-4 hover:scale-105 navlink" href="cheatsheet.html"
-                        aria-label="Takes to Cheatsheet page">Cheatsheet</a>
-                </li>
-                <li>
-                    <a class="inline-flex px-4 hover:scale-105 navlink active" href="components.html"
-                        aria-label="Takes to Components page">Components</a>
-                </li>
-                <li>
-                    <a class="inline-flex px-4 hover:scale-105 navlink" href="templates.html"
-                        aria-label="Takes to Templates page">Templates</a>
-                </li>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button id="menuToggle" type="button" class="-m-2.5 p-2.5">
+                    <span class="sr-only">Toggle menu</span>
+                    <!-- Open Menu Icon -->
+                    <svg id="openIcon" class="size-6 block" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <!-- Close Menu Icon (Initially Hidden) -->
+                    <svg id="closeIcon" class="size-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden lg:flex justify-center text-2xl gap-4">
+                <li><a class="inline-flex px-4 hover:scale-105 navlink" href="index.html">Home</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink" href="cheatsheet.html">CheatSheet</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="components.html">Components</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink" href="templates.html">Templates</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="absolute invisible opacity-0 overflow-hidden max-h-0 left-0 w-full transition-all duration-300 ease-in-out shadow lg:hidden">
+            <div class="flex flex-col items-center py-6 space-y-4 text-2xl">
+
+                <a href="index.html" class="block hover:scale-105">Home</a>
+                <a href="cheatsheet.html" class="block hover:scale-105">CheatSheet</a>
+                <a href="components.html" class="block hover:scale-105">Components</a>
+                <a href="templates.html" class="block hover:scale-105">Templates</a>
+            </div>
+        </div>
     </header>
     <main class="flex-1 justify-center py-4 text-lg/7">
         <div class="container mx-auto">
@@ -87,6 +107,30 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/284fde1047.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const openIcon = document.getElementById("openIcon");
+            const closeIcon = document.getElementById("closeIcon");
+
+            menuToggle.addEventListener("click", function () {
+                const isOpen = mobileMenu.classList.contains("max-h-96");
+
+                if (isOpen) {
+                    mobileMenu.classList.remove("max-h-96", "visible", "opacity-100");
+                    mobileMenu.classList.add("max-h-0", "invisible", "opacity-0");
+                    openIcon.classList.remove("hidden");
+                    closeIcon.classList.add("hidden");
+                } else {
+                    mobileMenu.classList.remove("max-h-0", "invisible", "opacity-0");
+                    mobileMenu.classList.add("max-h-96", "visible", "opacity-100");
+                    openIcon.classList.add("hidden");
+                    closeIcon.classList.remove("hidden");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

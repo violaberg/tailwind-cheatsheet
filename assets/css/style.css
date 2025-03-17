@@ -9,7 +9,9 @@
         --color-darkestGray: #242424;
         --color-black: #202020;
         --color-teal: #92F7C3;
+        --color-darkGreen: #1c3829;
         --color-purple: #B330E1;
+        --color-darkerPurple: #742092;
         --font-headings: "MuseoModerno", sans-serif;
         --font-text: "Jura", sans-serif;
     }
@@ -45,6 +47,25 @@
     footer,
     #mobileMenu {
         background: linear-gradient(90deg, hsla(149, 86%, 77%, 0.5) 40%, hsla(284, 75%, 54%, 0.5) 80%);
+        background-color: var(--color-white);
+    }
+    table thead {
+        border-bottom: 3px double var(--color-lightGray);
+        color: var(--color-darkerPurple);
+        font-family: var(--font-headings);
+    }
+    table tbody {
+        color: var(--color-darkGreen);
+    }
+    table td {
+        border-bottom: 1px dashed var(--color-lightGray);
+        padding: 0.5rem 0;
+    }
+    .divide-y {
+        color: var(--color-darkGreen);
+    }
+    .accordion-toggle {
+        background: linear-gradient(90deg, hsla(149, 86%, 77%, 0.3) 40%, hsla(284, 75%, 54%, 0.3) 80%);
         background-color: var(--color-white);
     }
 }
@@ -91,13 +112,11 @@
         color: var(--color-purple);
         font-family: var(--font-headings);
     }
-    .link:hover {
-        color: rgb(116, 32, 146);
+    .link:hover,
+    .navlink.active {
+        color: var(--color-darkerPurple);
     }
     .code {
         background-color: var(--color-lightestGray);
-    }
-    .navlink.active {
-        color: rgb(116, 32, 146);
     }
 }

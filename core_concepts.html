@@ -50,8 +50,9 @@
 
             <!-- Desktop Navigation -->
             <ul class="hidden lg:flex justify-center text-2xl gap-4">
-                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="index.html">Home</a></li>
-                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="core_concepts.html">Core Concepts</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink" href="index.html">Home</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="core_concepts.html">Core
+                        Concepts</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="cheatsheet.html">CheatSheet</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="components.html">Components</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="templates.html">Templates</a></li>
@@ -64,6 +65,7 @@
             <div class="flex flex-col items-center py-6 space-y-4 text-2xl">
 
                 <a href="index.html" class="block hover:scale-105">Home</a>
+                <a href="core_concepts.html" class="block hover:scale-105">Core Concepts</a>
                 <a href="cheatsheet.html" class="block hover:scale-105">CheatSheet</a>
                 <a href="components.html" class="block hover:scale-105">Components</a>
                 <a href="templates.html" class="block hover:scale-105">Templates</a>
@@ -73,111 +75,23 @@
 
     <main class="flex-1 justify-center py-4 text-lg/7">
         <div class="container mx-auto">
-            <h1 class="gradient-text text-center text-5xl">TailwindCSS v4.0</h1>
-            <blockquote class="text-center pb-4 text-2xl">
-                <p class="quote py-2 uppercase">"Design faster, build smarter."</p>
-                <p>A curated collection of TailwindCSS components, templates and a cheatsheet — because great UI should
-                    be effortless.</p>
-            </blockquote>
-            <section class="shadow p-2 my-3">
-                <div class="card shadow p-2">
-                    <h2 class="text-center text-3xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">Getting
-                        Started</h2>
-                    <div class="shadow p-2">
-                        <p class="pb-2">Adding TailwindCSS to your project has become a 2 second job. Few steps to
-                            follow from <a class="link font-semibold hover:scale-105"
-                                href="https://tailwindcss.com/docs/installation/tailwind-cli" target="_blank">TailwindCSS docs
-                            </a> and you're good to go.</p>
-                        <div class="p-2">Example using TailwindCSS CLI:
-                            <ol class="list-[upper-roman] px-4">
-                                <li class="py-2">First thing first, install tailwindcss and tailwindcss/cli:</li>
-                                <code class="code p-2">npm install tailwindcss @tailwindcss/cli</code>
-                                <li class="pb-2 pt-4">Add import to the top of your main css (input.css in this case)
-                                    file:</li>
-                                <code class="code p-2">@import "tailwindcss";</code>
-                                <li class="pb-2 pt-4">Run the CLI tool to scan source files for classes and build your
-                                    CSS (make sure you check
-                                    your file names and paths):</li>
-                                <code
-                                    class="code p-2">npx @tailwindcss/cli -i ./path/to/input.css -o .path/to/output.css --watch</code>
-                                <p class="py-2">or for Django run (check if static folder is in the root):</p>
-                                <code
-                                    class="code p-2">npx tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch --content './templates/**/*.html'</code>
-                                <li class="pb-2 pt-4">Add compiled CSS file to head of your html file.</li>
-                                <pre><code class="code p-2">&lt;link href="./path/to/output.css" rel="stylesheet"&gt;</code></pre>
-                            </ol>
-                            <p class="pt-4 mt-2 font-semibold">Extra step to make your life easier!</p>
-                            <p class="py-2">To avoid running full command every time you start developing or need to run
-                                build, add
-                                this
-                                to
-                                your package.json file (check your file path obviously):</p>
-                            <code class="code p-2 whitespace-pre-line">"scripts": {
-                                "build:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css",
-                                "watch:css": "tailwindcss -i ./path/to/input.css -o ./path/to/output.css --watch"}
-                            </code>
-                            <p class="py-4">Now you can use <code class="code p-2">npm run build:css</code> or <code
-                                    class="code p-2">npm run watch:css</code> instead of running long command.</p>
-                        </div>
-                        <h3 class="text-center text-2xl shadow py-2 my-3 text-shadow-sm">Build vs Watch Mode</h3>
-                        <div class="flex justify-center gap-4">
-                            <div class="card flex flex-col shadow p-2">
-                                <div class="card-title text-center text-xl font-semibold text-shadow-sm">Build Mode
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li><span class="font-semibold">One-time operation:</span> When you run npm run
-                                            build:css, TailwindCSS processes your
-                                            CSS
-                                            file once and generates the output file.</li>
-                                        <li><span class="font-semibold">Manual triggering:</span> You need to manually
-                                            run the command again every time you
-                                            make changes to your CSS.</li>
-                                        <li><span class="font-semibold">Best for:</span> Production deployment or when
-                                            you're done with development and
-                                            want to
-                                            generate the final CSS file.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card flex flex-col shadow p-2">
-                                <div class="card-title text-center text-xl font-semibold text-shadow-sm">Watch Mode
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li><span class="font-semibold">Continuous operation:</span> When you run npm
-                                            run watch:css, TailwindCSS starts a
-                                            process
-                                            that stays running in your terminal.</li>
-                                        <li><span class="font-semibold">Automatic detection:</span> It constantly
-                                            monitors your input CSS file (and any
-                                            files
-                                            referenced by your TailwindCSS configuration).</li>
-                                        <li><span class="font-semibold">Automatic rebuilding:</span> Whenever it detects
-                                            a change in any of these files, it
-                                            automatically rebuilds your CSS without requiring manual intervention.</li>
-                                        <li><span class="font-semibold">Best for:</span> Active development when you're
-                                            frequently changing your CSS files.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-2 py-2">
-                            <p>During development, you would usually want to start watch mode in a terminal and
-                                leave it running while you work. This saves you time and updates every css change
-                                automatically while you develop.</p>
-                        </div>
-                        <p class="font-semibold py-2">Congrats, you have finished setting up TailwindCSS v4.0</p>
-                        <p>For other setup ways head over to TailwindCSS website.</p>
-                    </div>
-                </div>
-            </section>
+            <h1 class="gradient-text text-center text-5xl">Core Concepts</h1>
             <section class="shadow p-2">
                 <div class="card shadow p-2">
                     <h2 class="text-center text-3xl shadow py-2 mb-3 text-shadow-sm">Color Palette</h2>
                     <div class="shadow p-2">
-                        <p class="pb-2">Some text will be here...</p>
+                        <p class="pb-2">Colours plays a crucial role in software development, influencing both
+                            aesthetics and usability. A well-chosen colour palette enhances user experience by improving
+                            readability, guiding user interactions, and establishing visual hierarchy. In UI/UX design
+                            colours can evoke emotions, communicate brand identity, and provide accessibility for users
+                            with visual impairments. Consistent use of colours also helps users navigate interfaces
+                            intuitively, reducing cognitive load.</p>
+                        <p>TailwindCSS offers a wonderful colour palette with
+                            plenty to choose from. Every colour in the palette includes 11 steps, with 50 being
+                            the lightest and 950 being the darkest.With such a versatile range of colors at your
+                            fingertips, you can create visually stunning, accessible, and intuitive designs. So go
+                            ahead—experiment, mix, and match to craft an interface that not only looks great but also
+                            enhances user experience!</p>
                         <div class="grid grid-rows-11 grid-cols-22 border-separate border-spacing-2 border"></div>
                     </div>
                 </div>

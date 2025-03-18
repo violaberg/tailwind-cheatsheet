@@ -363,6 +363,11 @@
   .border-separate {
     border-collapse: separate;
   }
+  .border-spacing-2 {
+    --tw-border-spacing-x: calc(var(--spacing) * 2);
+    --tw-border-spacing-y: calc(var(--spacing) * 2);
+    border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+  }
   .border-spacing-\[\&lt\;value\&gt\;\] {
     --tw-border-spacing-x: &lt;value&gt;;
     --tw-border-spacing-y: &lt;value&gt;;
@@ -513,11 +518,17 @@
   .break-after-right {
     break-after: right;
   }
+  .grid-cols-22 {
+    grid-template-columns: repeat(22, minmax(0, 1fr));
+  }
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+  .grid-rows-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;

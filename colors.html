@@ -376,50 +376,50 @@
                         <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Utilities</h3>
                         <div class="p-2">
                             <p>Using colour utilities are very straight forward, for example, <code
-                                    class="code p-2">bg-teal</code> for teal
+                                    class="code text-base p-2">bg-teal</code> for teal
                                 coloured background or have your text in orange by using <code
-                                    class="code p-2">text-orange-700</code> to set
+                                    class="code text-base p-2">text-orange-700</code> to set
                                 colour properties. To target the dark mode simply use dark variable, for example,
-                                <code class="code p-2">dark:text-white-500</code>.
+                                <code class="code text-base p-2">dark:text-white-500</code>.
                             </p>
                             <ul class="py-2">
-                                <li class="flex gap-4 pb-2"><code class="code p-2">bg-*</code>
-                                    <p>The background color of an element</p>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">bg-*</code>
+                                    <p class="inline-flex items-center">The background color of an element</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">text-*</code>
-                                    <p class="inline-flex items-center"></p>The text color of an element
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">text-*</code>
+                                    <p class="inline-flex items-center">The text color of an element</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">decoration-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">decoration-*</code>
                                     <p class="inline-flex items-center">The text decoration color of an element</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">border-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">border-*</code>
                                     <p class="inline-flex items-center">The border color of an element</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">outline-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">outline-*</code>
                                     <p class="inline-flex items-center">The outline color of an element</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">shadow-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">shadow-*</code>
                                     <p class="inline-flex items-center">The color of box shadows</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">inset-shadow-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">inset-shadow-*</code>
                                     <p class="inline-flex items-center">The color of inset box shadows</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">ring-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">ring-*</code>
                                     <p class="inline-flex items-center">The color of ring shadows</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">inset-ring-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">inset-ring-*</code>
                                     <p class="inline-flex items-center">The color of inset ring shadows</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">accent-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">accent-*</code>
                                     <p class="inline-flex items-center">The accent color of form controls</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">caret-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">caret-*</code>
                                     <p class="inline-flex items-center">The caret color in form controls</p>
                                 </li>
-                                <li class="flex gap-4 pb-2"><code class="code p-2">fill-*</code>
+                                <li class="flex gap-4 pb-2"><code class="code text-base p-2">fill-*</code>
                                     <p class="inline-flex items-center">The fill color of SVG elements</p>
                                 </li>
-                                <li class="flex gap-4"><code class="code p-2">stroke-*</code>
+                                <li class="flex gap-4"><code class="code text-base p-2">stroke-*</code>
                                     <p class="inline-flex items-center">The stroke color of SVG elements</p>
                                 </li>
                             </ul>
@@ -429,13 +429,31 @@
                         <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Opacity</h3>
                         <div class="p-2">
                             <p>You can change the opacity of a chosen colour using syntax such as <code
-                                    class="code p-2">bg-cyan/50</code>, in this case '50' sets the alpha channel of the
+                                    class="code text-base p-2">bg-emerald/50</code>, in this case '50' sets the alpha channel of the
                                 colour to 50%:</p>
-                            <p>As a handy option this syntax also supports arbitrary values and the CSS variable shorthand:
-                                <ul class="py-2">
-                                    <li class="pb-2"><pre><code class="code p-2">text-white-300/[65.75%]</code></pre></li>
-                                    <li class="pt-2"><pre><code class="code p-2">bg-teal-700/(--custom-teal)</code></pre></li>
-                                </ul>
+                            <div
+                                class="flex md:gap-4 w-full md:w-2xl md:p-2">
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/10 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/20 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/30 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/40 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/50 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/60 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/70 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/80 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/90 border"></div>
+                                <div class="inline-flex size-5 md:size-10 bg-emerald-500/100 border"></div>
+                            </div>
+                            <p>As a handy option this syntax also supports arbitrary values and the CSS variable
+                                shorthand:
+                            <ul class="py-2">
+                                <li class="pb-2">
+                                    <pre><code class="code text-base p-2">text-white-300/[65.75%]</code></pre>
+                                </li>
+                                <li class="pt-2">
+                                    <pre><code class="code text-base p-2">bg-teal-700/(--custom-teal)</code></pre>
+                                </li>
+                            </ul>
                             </p>
                         </div>
                     </div>

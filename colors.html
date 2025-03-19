@@ -51,8 +51,7 @@
             <!-- Desktop Navigation -->
             <ul class="hidden lg:flex justify-center text-2xl gap-4">
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="index.html">Home</a></li>
-                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="core_concepts.html">Core
-                        Concepts</a></li>
+                <li><a class="inline-flex px-4 hover:scale-105 navlink active" href="colors.html">Colours</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="cheatsheet.html">CheatSheet</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="components.html">Components</a></li>
                 <li><a class="inline-flex px-4 hover:scale-105 navlink" href="templates.html">Templates</a></li>
@@ -65,7 +64,7 @@
             <div class="flex flex-col items-center py-6 space-y-4 text-2xl">
 
                 <a href="index.html" class="block hover:scale-105">Home</a>
-                <a href="core_concepts.html" class="block hover:scale-105">Core Concepts</a>
+                <a href="colors.html" class="block hover:scale-105">Colors</a>
                 <a href="cheatsheet.html" class="block hover:scale-105">CheatSheet</a>
                 <a href="components.html" class="block hover:scale-105">Components</a>
                 <a href="templates.html" class="block hover:scale-105">Templates</a>
@@ -75,26 +74,28 @@
 
     <main class="flex-1 justify-center py-4 text-lg/7">
         <div class="container mx-auto">
-            <h1 class="gradient-text text-center text-5xl">Core Concepts</h1>
+            <h1 class="gradient-text text-center text-5xl">Colours</h1>
             <section class="shadow md:p-2">
                 <div class="card shadow p-2">
-                    <h2 class="text-center text-3xl shadow py-2 mb-3 text-shadow-sm">Color Palette</h2>
-                    <div class="shadow py-2 p-2">
+                    <h2 class="text-center text-3xl shadow py-2 mb-3 text-shadow-sm">Colour Palette</h2>
+                    <div class="shadow pb-4 pt-2 p-2">
                         <p class="pb-2">Colours plays a crucial role in software development, influencing both
                             aesthetics and usability. A well-chosen colour palette enhances user experience by improving
                             readability, guiding user interactions, and establishing visual hierarchy. In UI/UX design
                             colours can evoke emotions, communicate brand identity, and provide accessibility for users
                             with visual impairments. Consistent use of colours also helps users navigate interfaces
                             intuitively, reducing cognitive load.</p>
-                        <p class="pb-2">TailwindCSS offers a wonderful colour palette with
+                        <p class="pb-4">TailwindCSS offers a wonderful colour palette with
                             plenty to choose from. Every colour in the palette includes 11 steps, with 50 being
-                            the lightest and 950 being the darkest.With such a versatile range of colors at your
+                            the lightest and 950 being the darkest.With such a versatile range of colours at your
                             fingertips, you can create visually stunning, accessible, and intuitive designs. So go
                             ahead—experiment, mix, and match to craft an interface that not only looks great but also
                             enhances user experience!</p>
-                        <div class="grid grid-rows-[repeat(23,auto)] grid-cols-[repeat(12,auto)] md:gap-4 w-full md:w-2xl md:p-2 mx-auto text-xs md:text-sm capitalize font-medium md:bg-(--color-lightestGray)">
+                        <div
+                            class="grid grid-rows-[repeat(23,auto)] grid-cols-[repeat(12,auto)] md:gap-4 w-full md:w-2xl md:p-2 mx-auto text-xs md:text-sm capitalize font-medium">
                             <div class="size-6 md:size-10 pt-2"></div>
-                            <div class="-rotate-90 md:-rotate-0 size-5 md:size-10 text-center justify-center md:pt-2">50</div>
+                            <div class="-rotate-90 md:-rotate-0 size-5 md:size-10 text-center justify-center md:pt-2">50
+                            </div>
                             <div class="-rotate-90 md:-rotate-0 size-5 md:size-10 text-center md:pt-2">100</div>
                             <div class="-rotate-90 md:-rotate-0 size-5 md:size-10 text-center md:pt-2">200</div>
                             <div class="-rotate-90 md:-rotate-0 size-5 md:size-10 text-center md:pt-2">300</div>
@@ -369,6 +370,73 @@
                             <div class="size-5 md:size-10 bg-stone-800 border"></div>
                             <div class="size-5 md:size-10 bg-stone-900 border"></div>
                             <div class="size-5 md:size-10 bg-stone-950 border"></div>
+                        </div>
+                    </div>
+                    <div class="shadow p-2">
+                        <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Utilities</h3>
+                        <div class="p-2">
+                            <p>Using colour utilities are very straight forward, for example, <code
+                                    class="code p-2">bg-teal</code> for teal
+                                coloured background or have your text in orange by using <code
+                                    class="code p-2">text-orange-700</code> to set
+                                colour properties. To target the dark mode simply use dark variable, for example,
+                                <code class="code p-2">dark:text-white-500</code>.
+                            </p>
+                            <ul class="py-2">
+                                <li class="flex gap-4 pb-2"><code class="code p-2">bg-*</code>
+                                    <p>The background color of an element</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">text-*</code>
+                                    <p class="inline-flex items-center"></p>The text color of an element
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">decoration-*</code>
+                                    <p class="inline-flex items-center">The text decoration color of an element</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">border-*</code>
+                                    <p class="inline-flex items-center">The border color of an element</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">outline-*</code>
+                                    <p class="inline-flex items-center">The outline color of an element</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">shadow-*</code>
+                                    <p class="inline-flex items-center">The color of box shadows</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">inset-shadow-*</code>
+                                    <p class="inline-flex items-center">The color of inset box shadows</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">ring-*</code>
+                                    <p class="inline-flex items-center">The color of ring shadows</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">inset-ring-*</code>
+                                    <p class="inline-flex items-center">The color of inset ring shadows</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">accent-*</code>
+                                    <p class="inline-flex items-center">The accent color of form controls</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">caret-*</code>
+                                    <p class="inline-flex items-center">The caret color in form controls</p>
+                                </li>
+                                <li class="flex gap-4 pb-2"><code class="code p-2">fill-*</code>
+                                    <p class="inline-flex items-center">The fill color of SVG elements</p>
+                                </li>
+                                <li class="flex gap-4"><code class="code p-2">stroke-*</code>
+                                    <p class="inline-flex items-center">The stroke color of SVG elements</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow p-2">
+                        <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Opacity</h3>
+                        <div class="p-2">
+                            <p>You can change the opacity of a chosen colour using syntax such as <code
+                                    class="code p-2">bg-cyan/50</code>, in this case '50' sets the alpha channel of the
+                                colour to 50%:</p>
+                            <p>As a handy option this syntax also supports arbitrary values and the CSS variable shorthand:
+                                <ul class="py-2">
+                                    <li class="pb-2"><pre><code class="code p-2">text-white-300/[65.75%]</code></pre></li>
+                                    <li class="pt-2"><pre><code class="code p-2">bg-teal-700/(--custom-teal)</code></pre></li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>

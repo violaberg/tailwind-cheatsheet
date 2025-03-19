@@ -10,3 +10,4 @@ A curated collection of TailwindCSS components, templates and a cheatsheet — b
 - TailwindCSS info - [TailwindCSS](https://tailwindcss.com/)
 - Fonts - [Google Fonts](https://fonts.google.com/)
 - Colors and Gradients - [Coolors](https://coolors.co/?ref=65c3e665ab0d85000b3c7b75)
+- Favicon - [Real Favicon Generator](https://realfavicongenerator.net/)

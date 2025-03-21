@@ -383,9 +383,9 @@
                     </div>
                     <div class="flex flex-col md:flex-row justify-center gap-4">
                         <!-- Colour Utilities Section -->
-                        <div class="flex flex-col py-2 md:w-1/2">
+                        <div class="flex flex-col pt-2 md:w-1/2">
                             <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Utilities</h3>
-                            <div class="shadow p-2">
+                            <div class="shadow p-2 md:p-4">
                                 <p>Using colour utilities is very straight forward, for example, <code
                                         class="code text-base p-2">bg-teal</code> for teal
                                     coloured background or have your text in orange by using <code
@@ -456,9 +456,9 @@
                         </div>
 
                         <!-- Colour Opacity Section -->
-                        <div class="flex flex-col py-2 md:w-1/2">
+                        <div class="flex flex-col pt-2 md:w-1/2">
                             <h3 class="text-center text-2xl shadow py-2 mb-3 text-shadow-sm">Colour Opacity</h3>
-                            <div class="shadow p-2">
+                            <div class="shadow p-2 md:p-4">
                                 <p class="pb-2">You can change the opacity of a chosen colour using syntax such as <code
                                         class="code text-base p-2">bg-emerald/50</code>, in this case '50' sets the
                                     alpha channel of the
@@ -495,62 +495,63 @@
                 <div class="card shadow p-2">
                     <h2 class="text-center text-3xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">OKLCH
                     </h2>
-                    <div class="shadow p-2">
-                        <p class="pb-2">As TailwindCSS uses the OKLCH color model - a perceptually uniform alternative
-                            to traditional color models like RGB and HEX, let's look into what exactly it is.</p>
+                    <div class="shadow p-2 md:p-4">
+                        <p class="pb-4">As TailwindCSS uses the <span class="font-(family-name:--font-headings)">OKLCH color model</span> - a perceptually uniform alternative
+                            to traditional color models like RGB and HEX, let's look into what exactly is it.</p>
                         <h3 class="text-center text-2xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">
                             What
                             is OKLCH?</h3>
-                        <p>OKLCH stands for OKLab (Lightness, Chroma, and Hue), which is designed to represent colors in
-                            a way that aligns better with human perception. The OKLCH color space was created to offer
-                            consistent perceptual differences. In simpler terms, colors that are close to each other in
+                        <p class="pb-4 pt-2"><span class="font-(family-name:--font-headings)">OKLCH</span> stands for OKLab (<span class="italic">Lightness, Chroma, and Hue</span>), which is designed to represent colours in
+                            a way that aligns better with human perception. The OKLCH colour space was created to offer
+                            consistent perceptual differences. In simpler terms, colours that are close to each other in
                             OKLCH will appear equally close to the human eye, making it more intuitive for designers and
-                            more accurate for color manipulations.</p>
+                            more accurate for colour manipulations.</p>
                         <h3 class="text-center text-2xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">
                             OKLCH Components</h3>
-                        <ul>
-                            <li>O: Lightness (0–1 scale, where 0 is black and 1 is full white)</li>
-                            <li>L: Chroma (how intense the color is, 0 means gray)</li>
-                            <li>C: Hue (the color itself, in a circular scale 0–360°)</li>
+                        <ul class="list-[upper-roman] pl-6">
+                            <li><span class="font-(family-name:--font-headings)">L: Lightness</span> (0–1 scale, where 0 is black and 1 is full white)</li>
+                            <li class="py-2"><span class="font-(family-name:--font-headings)">C: Chroma</span> (how intense the color is, 0 means gray)</li>
+                            <li><span class="font-(family-name:--font-headings)">H: Hue</span> (the color itself, in a circular scale 0–360°)</li>
                         </ul>
-                        <p class="pt-2">For example, <code class="code p-2 text-sm">oklch(0.971 0.013 17.38)</code>
+                        <p class="pt-4">For example, <code class="code p-2 text-sm">oklch(0.971 0.013 17.38)</code>
                             describes a color with:</p>
-                        <ul>
-                            <li>Lightness = 0.971 (very light)</li>
-                            <li>Chroma = 0.013 (very muted, almost gray)</li>
-                            <li>Hue = 17.38° (which corresponds to a very light reddish tone)</li>
+                        <ul class="pt-2">
+                            <li><span class="font-(family-name:--font-headings)">Lightness = 0.971</span> (very light)</li>
+                            <li><span class="font-(family-name:--font-headings)">Chroma = 0.013</span> (very muted, almost gray)</li>
+                            <li><span class="font-(family-name:--font-headings)">Hue = 17.38°</span> (which corresponds to a very light reddish tone)</li>
                         </ul>
+                        <p class="py-4">Check out this <a class="link font-semibold hover:scale-105" href="https://oklch.com/#70,0.1,1,100">OKLCH Color Picker & Converter</a>, an amazing tool to pick the colour you want.</p>
                         <h3 class="text-center text-2xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">How
                             is OKLCH Different from HEX?</h3>
-                        <ul>
-                            <li>Perceptual Uniformity: The most significant advantage of OKLCH over HEX is its better
+                        <ul class="list-[upper-roman] pl-6 pb-4 pt-2">
+                            <li><span class="font-(family-name:--font-headings)">Perceptual Uniformity:</span> The most significant advantage of OKLCH over HEX is its better
                                 perceptual uniformity. When you change a value in OKLCH (for example, adjust the
                                 lightness or chroma), the visual difference will be consistent and predictable across
-                                all displays, unlike RGB/HEX where the color can shift unpredictably due to device
+                                all displays, unlike RGB/HEX where the colour can shift unpredictably due to device
                                 differences.</li>
-                            <li>More Intuitive for Designers: OKLCH is closer to how humans perceive color, making it
-                                easier to create visually harmonious color palettes. HEX colors are not as perceptually
-                                uniform, meaning that small changes in the color values can produce noticeable changes
+                            <li><span class="font-(family-name:--font-headings)">More Intuitive for Designers:</span> OKLCH is closer to how humans perceive colour, making it
+                                easier to create visually harmonious colour palettes. HEX colors are not as perceptually
+                                uniform, meaning that small changes in the colour values can produce noticeable changes
                                 in hue or brightness that may not feel "natural."</li>
-                            <li>Better for Color Manipulation: With OKLCH, you can manipulate colors based on how people
+                            <li><span class="font-(family-name:--font-headings)">Better for Colour Manipulation:</span> With OKLCH, you can manipulate colours based on how people
                                 perceive them. You can adjust lightness or chroma without distorting the underlying hue,
                                 which is harder to achieve with RGB or HEX.</li>
                         </ul>
                         <h3 class="text-center text-2xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">
                             Advantages of Using OKLCH</h3>
-                        <ul>
-                            <li>More predictable color adjustments: Changing the values of the lightness, chroma, or hue
+                        <ul class="list-[upper-roman] pl-6 pb-4 pt-2">
+                            <li><span class="font-(family-name:--font-headings)">More predictable color adjustments:</span> Changing the values of the lightness, chroma, or hue
                                 components will have a more uniform visual effect.</li>
-                            <li>Improved accessibility: Colors in OKLCH can be better fine-tuned for contrast, making
+                            <li><span class="font-(family-name:--font-headings)">Improved accessibility:</span> Colours in OKLCH can be better fine-tuned for contrast, making
                                 them more accessible to people with color vision deficiencies.</li>
-                            <li>Consistency across devices: OKLCH handles perceptual differences better than RGB/HEX
+                            <li><span class="font-(family-name:--font-headings)">Consistency across devices:</span> OKLCH handles perceptual differences better than RGB/HEX
                                 across different screens.</li>
                         </ul>
                         <h3 class="text-center text-2xl shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-2 mb-3 text-shadow-sm">
                             OKLCH vs HEX</h3>
-                        <p>HEX is still widely used because of its compatibility across browsers and tools, and will
+                        <p class="pt-2"><span class="font-(family-name:--font-headings)">HEX</span> is still widely used because of its compatibility across browsers and tools, and will
                             certaintly stay around. It's simple, well-understood, and easy to use in most cases.
-                            OKLCH on the other hand can be better if you're working on more advanced color manipulations
+                            <span class="font-(family-name:--font-headings)">OKLCH</span> on the other hand can be better if you're working on more advanced color manipulations
                             where perceptual accuracy is essential, such as advanced design systems, data visualization,
                             or high-end UI/UX projects. If you're manipulating lightness and chroma while maintaining a
                             consistent appearance, OKLCH is the better choice.

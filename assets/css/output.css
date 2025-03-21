@@ -447,6 +447,9 @@
   }
 }
 @layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
   .invisible {
     visibility: hidden;
   }
@@ -464,6 +467,16 @@
     white-space: nowrap;
     border-width: 0;
   }
+  .not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
   .absolute {
     position: absolute;
   }
@@ -476,11 +489,206 @@
   .static {
     position: static;
   }
+  .sticky {
+    position: sticky;
+  }
+  .-inset-full {
+    inset: -100%;
+  }
+  .-inset-px {
+    inset: -1px;
+  }
+  .inset-\[\&lt\;value\&gt\;\] {
+    inset: &lt;value&gt;;
+  }
+  .inset-\[\&lt\;value\>\] {
+    inset: &lt;value>;
+  }
+  .inset-\[\&value\>\] {
+    inset: &value>;
+  }
+  .inset-\[\<value\>\] {
+    inset: <value>;
+  }
+  .inset-auto {
+    inset: auto;
+  }
+  .inset-full {
+    inset: 100%;
+  }
+  .inset-px {
+    inset: 1px;
+  }
+  .-inset-x-full {
+    inset-inline: -100%;
+  }
+  .-inset-x-px {
+    inset-inline: -1px;
+  }
+  .inset-x-\[\&lt\;value\&gt\;\] {
+    inset-inline: &lt;value&gt;;
+  }
+  .inset-x-\[\&lt\;value\>\] {
+    inset-inline: &lt;value>;
+  }
+  .inset-x-\[\<value\>\] {
+    inset-inline: <value>;
+  }
+  .inset-x-px {
+    inset-inline: 1px;
+  }
+  .-inset-y-full {
+    inset-block: -100%;
+  }
+  .-inset-y-px {
+    inset-block: -1px;
+  }
+  .inset-y-\[\&lt\;value\&gt\;\] {
+    inset-block: &lt;value&gt;;
+  }
+  .inset-y-\[\&lt\;value\>\] {
+    inset-block: &lt;value>;
+  }
+  .inset-y-\[\<value\>\] {
+    inset-block: <value>;
+  }
+  .inset-y-auto {
+    inset-block: auto;
+  }
+  .inset-y-full {
+    inset-block: 100%;
+  }
+  .inset-y-px {
+    inset-block: 1px;
+  }
+  .-start-full {
+    inset-inline-start: -100%;
+  }
+  .-start-px {
+    inset-inline-start: -1px;
+  }
+  .start-\[\&lt\;value\&gt\;\] {
+    inset-inline-start: &lt;value&gt;;
+  }
+  .start-\[\&lt\;value\>\] {
+    inset-inline-start: &lt;value>;
+  }
+  .start-\[\<value\>\] {
+    inset-inline-start: <value>;
+  }
+  .start-auto {
+    inset-inline-start: auto;
+  }
+  .start-full {
+    inset-inline-start: 100%;
+  }
+  .start-px {
+    inset-inline-start: 1px;
+  }
+  .-end-full {
+    inset-inline-end: -100%;
+  }
+  .-end-px {
+    inset-inline-end: -1px;
+  }
+  .end-\[\&lt\;value\&gt\;\] {
+    inset-inline-end: &lt;value&gt;;
+  }
+  .end-\[\&lt\;value\>\] {
+    inset-inline-end: &lt;value>;
+  }
+  .end-\[\<value\>\] {
+    inset-inline-end: <value>;
+  }
+  .end-auto {
+    inset-inline-end: auto;
+  }
+  .end-full {
+    inset-inline-end: 100%;
+  }
+  .end-px {
+    inset-inline-end: 1px;
+  }
   .-top-8 {
     top: calc(var(--spacing) * -8);
   }
+  .-top-full {
+    top: -100%;
+  }
+  .-top-px {
+    top: -1px;
+  }
   .top-4 {
     top: calc(var(--spacing) * 4);
+  }
+  .top-\[\&lt\;value\&gt\;\] {
+    top: &lt;value&gt;;
+  }
+  .top-\[\&lt\;value\>\] {
+    top: &lt;value>;
+  }
+  .top-\[\<value\>\] {
+    top: <value>;
+  }
+  .top-auto {
+    top: auto;
+  }
+  .top-full {
+    top: 100%;
+  }
+  .top-px {
+    top: 1px;
+  }
+  .-right-full {
+    right: -100%;
+  }
+  .-right-px {
+    right: -1px;
+  }
+  .right-\[\&lt\;value\&gt\;\] {
+    right: &lt;value&gt;;
+  }
+  .right-\[\&lt\;value\>\] {
+    right: &lt;value>;
+  }
+  .right-\[\<value\>\] {
+    right: <value>;
+  }
+  .right-auto {
+    right: auto;
+  }
+  .right-px {
+    right: 1px;
+  }
+  .-bottom-full {
+    bottom: -100%;
+  }
+  .-bottom-px {
+    bottom: -1px;
+  }
+  .bottom-\[\&lt\;value\&gt\;\] {
+    bottom: &lt;value&gt;;
+  }
+  .bottom-\[\&lt\;value\>\] {
+    bottom: &lt;value>;
+  }
+  .bottom-\[\<value\>\] {
+    bottom: <value>;
+  }
+  .bottom-auto {
+    bottom: auto;
+  }
+  .bottom-full {
+    bottom: 100%;
+  }
+  .bottom-px {
+    bottom: 1px;
+  }
+  .-left-full {
+    left: -100%;
+  }
+  .-left-px {
+    left: -1px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -491,8 +699,80 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .left-\[\&lt\;value\&gt\;\] {
+    left: &lt;value&gt;;
+  }
+  .left-\[\&lt\;value\>\] {
+    left: &lt;value>;
+  }
+  .left-\[\<value\>\] {
+    left: <value>;
+  }
+  .left-auto {
+    left: auto;
+  }
+  .left-full {
+    left: 100%;
+  }
+  .left-px {
+    left: 1px;
+  }
+  .isolate {
+    isolation: isolate;
+  }
+  .isolation-auto {
+    isolation: auto;
+  }
   .z-10 {
     z-index: 10;
+  }
+  .z-\[\&lt\;value\&gt\;\] {
+    z-index: &lt;value&gt;;
+  }
+  .z-\[\<value\&gt\;\] {
+    z-index: <value&gt;;
+  }
+  .z-\[\<value\>\] {
+    z-index: <value>;
+  }
+  .z-\[\<value\] {
+    z-index: <value;
+  }
+  .z-auto {
+    z-index: auto;
+  }
+  .float-end {
+    float: inline-end;
+  }
+  .float-left {
+    float: left;
+  }
+  .float-none {
+    float: none;
+  }
+  .float-right {
+    float: right;
+  }
+  .float-start {
+    float: inline-start;
+  }
+  .clear-both {
+    clear: both;
+  }
+  .clear-end {
+    clear: inline-end;
+  }
+  .clear-left {
+    clear: left;
+  }
+  .clear-none {
+    clear: none;
+  }
+  .clear-right {
+    clear: right;
+  }
+  .clear-start {
+    clear: inline-start;
   }
   .container {
     width: 100%;
@@ -542,8 +822,14 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
+  }
+  .flow-root {
+    display: flow-root;
   }
   .grid {
     display: grid;
@@ -551,11 +837,50 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
   .inline-flex {
     display: inline-flex;
   }
+  .inline-grid {
+    display: inline-grid;
+  }
+  .inline-table {
+    display: inline-table;
+  }
+  .list-item {
+    display: list-item;
+  }
   .table {
     display: table;
+  }
+  .table-caption {
+    display: table-caption;
+  }
+  .table-cell {
+    display: table-cell;
+  }
+  .table-column {
+    display: table-column;
+  }
+  .table-column-group {
+    display: table-column-group;
+  }
+  .table-footer-group {
+    display: table-footer-group;
+  }
+  .table-header-group {
+    display: table-header-group;
+  }
+  .table-row {
+    display: table-row;
+  }
+  .table-row-group {
+    display: table-row-group;
   }
   .aspect-\[\&lt\;value\&gt\;\] {
     aspect-ratio: &lt;value&gt;;
@@ -800,8 +1125,50 @@
       border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     }
   }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .overflow-clip {
+    overflow: clip;
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
+  .overflow-x-visible {
+    overflow-x: visible;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .overflow-y-clip {
+    overflow-y: clip;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
+  .overflow-y-visible {
+    overflow-y: visible;
+  }
+  .overscroll-auto {
+    overscroll-behavior: auto;
+  }
+  .overscroll-contain {
+    overscroll-behavior: contain;
+  }
+  .overscroll-none {
+    overscroll-behavior: none;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -1616,6 +1983,54 @@
   .bg-clip-text {
     background-clip: text;
   }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
+  }
+  .object-none {
+    object-fit: none;
+  }
+  .object-scale-down {
+    object-fit: scale-down;
+  }
+  .object-\[\&lt\;value\&gt\;\] {
+    object-position: &lt;value&gt;;
+  }
+  .object-\[\<value\>\] {
+    object-position: <value>;
+  }
+  .object-bottom {
+    object-position: bottom;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-left {
+    object-position: left;
+  }
+  .object-left-bottom {
+    object-position: left bottom;
+  }
+  .object-left-top {
+    object-position: left top;
+  }
+  .object-right {
+    object-position: right;
+  }
+  .object-right-bottom {
+    object-position: right bottom;
+  }
+  .object-right-top {
+    object-position: right top;
+  }
+  .object-top {
+    object-position: top;
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -1627,12 +2042,6 @@
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);

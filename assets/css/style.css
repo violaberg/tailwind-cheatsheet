@@ -119,4 +119,9 @@
     .code {
         background-color: var(--color-lightestGray);
     }
+    .checked-bg {
+        background-image: linear-gradient(#e2e2dd 1px, transparent 1px), linear-gradient(to right, #e2e2dd 1px, transparent 1px);
+        background-size: 16px 16px;
+        background-color: #ffffff;
+    }
 }

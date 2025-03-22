@@ -501,15 +501,6 @@
   .inset-\[\&lt\;value\&gt\;\] {
     inset: &lt;value&gt;;
   }
-  .inset-\[\&lt\;value\>\] {
-    inset: &lt;value>;
-  }
-  .inset-\[\&value\>\] {
-    inset: &value>;
-  }
-  .inset-\[\<value\>\] {
-    inset: <value>;
-  }
   .inset-auto {
     inset: auto;
   }
@@ -528,12 +519,6 @@
   .inset-x-\[\&lt\;value\&gt\;\] {
     inset-inline: &lt;value&gt;;
   }
-  .inset-x-\[\&lt\;value\>\] {
-    inset-inline: &lt;value>;
-  }
-  .inset-x-\[\<value\>\] {
-    inset-inline: <value>;
-  }
   .inset-x-px {
     inset-inline: 1px;
   }
@@ -545,12 +530,6 @@
   }
   .inset-y-\[\&lt\;value\&gt\;\] {
     inset-block: &lt;value&gt;;
-  }
-  .inset-y-\[\&lt\;value\>\] {
-    inset-block: &lt;value>;
-  }
-  .inset-y-\[\<value\>\] {
-    inset-block: <value>;
   }
   .inset-y-auto {
     inset-block: auto;
@@ -570,12 +549,6 @@
   .start-\[\&lt\;value\&gt\;\] {
     inset-inline-start: &lt;value&gt;;
   }
-  .start-\[\&lt\;value\>\] {
-    inset-inline-start: &lt;value>;
-  }
-  .start-\[\<value\>\] {
-    inset-inline-start: <value>;
-  }
   .start-auto {
     inset-inline-start: auto;
   }
@@ -593,12 +566,6 @@
   }
   .end-\[\&lt\;value\&gt\;\] {
     inset-inline-end: &lt;value&gt;;
-  }
-  .end-\[\&lt\;value\>\] {
-    inset-inline-end: &lt;value>;
-  }
-  .end-\[\<value\>\] {
-    inset-inline-end: <value>;
   }
   .end-auto {
     inset-inline-end: auto;
@@ -624,12 +591,6 @@
   .top-\[\&lt\;value\&gt\;\] {
     top: &lt;value&gt;;
   }
-  .top-\[\&lt\;value\>\] {
-    top: &lt;value>;
-  }
-  .top-\[\<value\>\] {
-    top: <value>;
-  }
   .top-auto {
     top: auto;
   }
@@ -648,12 +609,6 @@
   .right-\[\&lt\;value\&gt\;\] {
     right: &lt;value&gt;;
   }
-  .right-\[\&lt\;value\>\] {
-    right: &lt;value>;
-  }
-  .right-\[\<value\>\] {
-    right: <value>;
-  }
   .right-auto {
     right: auto;
   }
@@ -668,12 +623,6 @@
   }
   .bottom-\[\&lt\;value\&gt\;\] {
     bottom: &lt;value&gt;;
-  }
-  .bottom-\[\&lt\;value\>\] {
-    bottom: &lt;value>;
-  }
-  .bottom-\[\<value\>\] {
-    bottom: <value>;
   }
   .bottom-auto {
     bottom: auto;
@@ -702,12 +651,6 @@
   .left-\[\&lt\;value\&gt\;\] {
     left: &lt;value&gt;;
   }
-  .left-\[\&lt\;value\>\] {
-    left: &lt;value>;
-  }
-  .left-\[\<value\>\] {
-    left: <value>;
-  }
   .left-auto {
     left: auto;
   }
@@ -728,15 +671,6 @@
   }
   .z-\[\&lt\;value\&gt\;\] {
     z-index: &lt;value&gt;;
-  }
-  .z-\[\<value\&gt\;\] {
-    z-index: <value&gt;;
-  }
-  .z-\[\<value\>\] {
-    z-index: <value>;
-  }
-  .z-\[\<value\] {
-    z-index: <value;
   }
   .z-auto {
     z-index: auto;
@@ -920,6 +854,12 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .table-auto {
     table-layout: auto;
   }
@@ -1093,6 +1033,9 @@
   }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -2001,9 +1944,6 @@
   .object-\[\&lt\;value\&gt\;\] {
     object-position: &lt;value&gt;;
   }
-  .object-\[\<value\>\] {
-    object-position: <value>;
-  }
   .object-bottom {
     object-position: bottom;
   }
@@ -2143,6 +2083,9 @@
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
+  }
+  .text-wrap {
+    text-wrap: wrap;
   }
   .whitespace-nowrap {
     white-space: nowrap;

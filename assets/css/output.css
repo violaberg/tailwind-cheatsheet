@@ -288,6 +288,11 @@
     --tracking-wide: 0.025em;
     --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --perspective-dramatic: 100px;
+    --perspective-near: 300px;
+    --perspective-normal: 500px;
+    --perspective-midrange: 800px;
+    --perspective-distant: 1200px;
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -891,6 +896,67 @@
     --tw-border-spacing-y: &lt;value&gt;;
     border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
   }
+  .origin-\[\&lt\;value\&gt\;\] {
+    transform-origin: &lt;value&gt;;
+  }
+  .origin-\[\&lt\;value\>\] {
+    transform-origin: &lt;value>;
+  }
+  .origin-\[\<value\>\] {
+    transform-origin: <value>;
+  }
+  .origin-bottom {
+    transform-origin: bottom;
+  }
+  .origin-bottom-left {
+    transform-origin: bottom left;
+  }
+  .origin-bottom-right {
+    transform-origin: bottom right;
+  }
+  .origin-center {
+    transform-origin: center;
+  }
+  .origin-left {
+    transform-origin: left;
+  }
+  .origin-right {
+    transform-origin: right;
+  }
+  .origin-top {
+    transform-origin: top;
+  }
+  .origin-top-left {
+    transform-origin: top left;
+  }
+  .origin-top-right {
+    transform-origin: top right;
+  }
+  .-translate-full {
+    --tw-translate-x: -100%;
+    --tw-translate-y: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-px {
+    --tw-translate-x: -1px;
+    --tw-translate-y: -1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-\[\<value\>\] {
+    --tw-translate-x: <value>;
+    --tw-translate-y: <value>;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-full {
+    --tw-translate-x: 100%;
+    --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-px {
+    --tw-translate-x: 1px;
+    --tw-translate-y: 1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1 {
     --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -899,11 +965,229 @@
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-px {
+    --tw-translate-x: -1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-\[\<value\>\] {
+    --tw-translate-x: <value>;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-full {
+    --tw-translate-x: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-px {
+    --tw-translate-x: 1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-full {
+    --tw-translate-y: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-px {
+    --tw-translate-y: -1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-\[\<value\>\] {
+    --tw-translate-y: <value>;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-full {
+    --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-px {
+    --tw-translate-y: 1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-z-px {
+    --tw-translate-z: -1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
+  .translate-z-\[\<value\>\] {
+    --tw-translate-z: <value>;
+    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
+  .translate-z-px {
+    --tw-translate-z: 1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
+  .translate-none {
+    translate: none;
+  }
+  .scale-x-\[\&lt\;value\&gt\;\] {
+    --tw-scale-x: &lt;value&gt;;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-x-\[\&lt\;value\>\] {
+    --tw-scale-x: &lt;value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-x-\[\<value\>\] {
+    --tw-scale-x: <value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-y-\[\&lt\;value\&gt\;\] {
+    --tw-scale-y: &lt;value&gt;;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-y-\[\&lt\;value\>\] {
+    --tw-scale-y: &lt;value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-y-\[\<value\>\] {
+    --tw-scale-y: <value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-z-\[\&lt\;value\&gt\;\] {
+    --tw-scale-z: &lt;value&gt;;
+    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+  }
+  .scale-z-\[\&lt\;value\>\] {
+    --tw-scale-z: &lt;value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+  }
+  .scale-z-\[\<value\>\] {
+    --tw-scale-z: <value>;
+    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+  }
+  .scale-3d {
+    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+  }
+  .scale-\[\&lt\;value\&gt\;\] {
+    scale: &lt;value&gt;;
+  }
+  .scale-\[\&lt\;value\>\] {
+    scale: &lt;value>;
+  }
+  .scale-\[\<value\>\] {
+    scale: <value>;
+  }
+  .scale-\[value\>\] {
+    scale: value>;
+  }
+  .scale-none {
+    scale: none;
+  }
   .-rotate-90 {
     rotate: calc(90deg * -1);
   }
+  .rotate-\[\&lt\;value\&gt\;\] {
+    rotate: &lt;value&gt;;
+  }
+  .rotate-\[\&lt\;value\>\] {
+    rotate: &lt;value>;
+  }
+  .rotate-\[\<value\>\] {
+    rotate: <value>;
+  }
+  .rotate-none {
+    rotate: none;
+  }
+  .rotate-x-\[\&lt\;value\&gt\;\] {
+    --tw-rotate-x: rotateX(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-x-\[\&lt\;value\>\] {
+    --tw-rotate-x: rotateX(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-x-\[\<value\>\] {
+    --tw-rotate-x: rotateX(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-\[\&lt\;value\&gt\;\] {
+    --tw-rotate-y: rotateY(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-\[\&lt\;value\>\] {
+    --tw-rotate-y: rotateY(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-\[\&lt\;value\] {
+    --tw-rotate-y: rotateY(&lt;value);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-\[\<value\>\] {
+    --tw-rotate-y: rotateY(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-\[\&lt\;value\&gt\;\] {
+    --tw-rotate-z: rotateZ(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-\[\&lt\;value\>\] {
+    --tw-rotate-z: rotateZ(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-\[\<value\>\] {
+    --tw-rotate-z: rotateZ(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-\[\&lt\;value\&gt\;\] {
+    --tw-skew-x: skewX(&lt;value&gt;);
+    --tw-skew-y: skewY(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-\[\&lt\;value\>\] {
+    --tw-skew-x: skewX(&lt;value>);
+    --tw-skew-y: skewY(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-\[\<value\>\] {
+    --tw-skew-x: skewX(<value>);
+    --tw-skew-y: skewY(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-x-\[\&lt\;value\&gt\;\] {
+    --tw-skew-x: skewX(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-x-\[\&lt\;value\>\] {
+    --tw-skew-x: skewX(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-x-\[\<value\>\] {
+    --tw-skew-x: skewX(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-y-\[\&lt\;value\&gt\;\] {
+    --tw-skew-y: skewY(&lt;value&gt;);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-y-\[\&lt\;value\>\] {
+    --tw-skew-y: skewY(&lt;value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .skew-y-\[\<value\>\] {
+    --tw-skew-y: skewY(<value>);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .transform-\[\&lt\;value\&gt\;\] {
+    transform: &lt;value&gt;;
+  }
+  .transform-\[\&lt\;value\>\] {
+    transform: &lt;value>;
+  }
+  .transform-\[\<value\>\] {
+    transform: <value>;
+  }
+  .transform-cpu {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .transform-gpu {
+    transform: translateZ(0) var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .transform-none {
+    transform: none;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -913,6 +1197,12 @@
   }
   .list-\[upper-roman\] {
     list-style-type: upper-roman;
+  }
+  .appearance-auto {
+    appearance: auto;
+  }
+  .appearance-none {
+    appearance: none;
   }
   .columns-2xl {
     columns: var(--container-2xl);
@@ -1926,6 +2216,57 @@
   .bg-clip-text {
     background-clip: text;
   }
+  .fill-\[\&lt\;color\&gt\;\] {
+    fill: &lt;color&gt;;
+  }
+  .fill-black {
+    fill: var(--color-black);
+  }
+  .fill-current {
+    fill: currentColor;
+  }
+  .fill-inherit {
+    fill: inherit;
+  }
+  .fill-none {
+    fill: none;
+  }
+  .fill-red-50 {
+    fill: var(--color-red-50);
+  }
+  .fill-transparent {
+    fill: transparent;
+  }
+  .fill-white {
+    fill: var(--color-white);
+  }
+  .stroke-\[\&lt\;color\&gt\;\] {
+    stroke: &lt;color&gt;;
+  }
+  .stroke-\[\&lt\;value\&gt\;\] {
+    stroke: &lt;value&gt;;
+  }
+  .stroke-black {
+    stroke: var(--color-black);
+  }
+  .stroke-current {
+    stroke: currentColor;
+  }
+  .stroke-inherit {
+    stroke: inherit;
+  }
+  .stroke-none {
+    stroke: none;
+  }
+  .stroke-red-50 {
+    stroke: var(--color-red-50);
+  }
+  .stroke-transparent {
+    stroke: transparent;
+  }
+  .stroke-white {
+    stroke: var(--color-white);
+  }
   .object-contain {
     object-fit: contain;
   }
@@ -2111,6 +2452,63 @@
   .underline {
     text-decoration-line: underline;
   }
+  .caret-\[\&lt\;value\&gt\;\] {
+    caret-color: &lt;value&gt;;
+  }
+  .caret-black {
+    caret-color: var(--color-black);
+  }
+  .caret-current {
+    caret-color: currentColor;
+  }
+  .caret-inherit {
+    caret-color: inherit;
+  }
+  .caret-red-50 {
+    caret-color: var(--color-red-50);
+  }
+  .caret-transparent {
+    caret-color: transparent;
+  }
+  .caret-white {
+    caret-color: var(--color-white);
+  }
+  .accent-black {
+    accent-color: var(--color-black);
+  }
+  .accent-current {
+    accent-color: currentColor;
+  }
+  .accent-inherit {
+    accent-color: inherit;
+  }
+  .accent-red-50 {
+    accent-color: var(--color-red-50);
+  }
+  .accent-transparent {
+    accent-color: transparent;
+  }
+  .accent-white {
+    accent-color: var(--color-white);
+  }
+  .scheme-dark {
+    color-scheme: dark;
+  }
+  .scheme-light {
+    color-scheme: light;
+  }
+  .scheme-light-dark {
+    color-scheme: light dark;
+  }
+  .scheme-normal {
+    color-scheme: normal;
+  }
+  .scheme-only-dark {
+    color-scheme: only dark;
+  }
+  .scheme-only-light {
+    color-scheme: only light;
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -2187,6 +2585,66 @@
   }
   .forced-color-adjust-none {
     forced-color-adjust: none;
+  }
+  .backface-visible {
+    backface-visibility: visible;
+  }
+  .perspective-\[\&lt\;value\&gt\;\] {
+    perspective: &lt;value&gt;;
+  }
+  .perspective-distant {
+    perspective: var(--perspective-distant);
+  }
+  .perspective-dramatic {
+    perspective: var(--perspective-dramatic);
+  }
+  .perspective-midrange {
+    perspective: var(--perspective-midrange);
+  }
+  .perspective-near {
+    perspective: var(--perspective-near);
+  }
+  .perspective-none {
+    perspective: none;
+  }
+  .perspective-normal {
+    perspective: var(--perspective-normal);
+  }
+  .perspective-origin-\[\&lt\;value\&gt\;\] {
+    perspective-origin: &lt;value&gt;;
+  }
+  .perspective-origin-bottom {
+    perspective-origin: bottom;
+  }
+  .perspective-origin-bottom-left {
+    perspective-origin: bottom left;
+  }
+  .perspective-origin-bottom-right {
+    perspective-origin: bottom right;
+  }
+  .perspective-origin-center {
+    perspective-origin: center;
+  }
+  .perspective-origin-left {
+    perspective-origin: left;
+  }
+  .perspective-origin-right {
+    perspective-origin: right;
+  }
+  .perspective-origin-top {
+    perspective-origin: top;
+  }
+  .perspective-origin-top-left {
+    perspective-origin: top left;
+  }
+  .perspective-origin-top-right {
+    perspective-origin: top right;
+  }
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+  .transform-flat {
+    transform-style: flat;
   }
   .group-hover\:block {
     &:is(:where(.group):hover *) {
@@ -2443,6 +2901,21 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -2634,19 +3107,4 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false;
-}
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
 }

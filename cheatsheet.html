@@ -4392,7 +4392,7 @@
                                                 <pre><code>bg-clip-text</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>background-clip: ctext;</code></pre>
+                                                <pre><code>background-clip: text;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -4444,7 +4444,7 @@
                                                 <pre><code>bg-black</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>background-color: var(--color-black); /* #000 */</code></pre>
+                                                <pre><code>background-color: var(--color-black);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -4452,7 +4452,7 @@
                                                 <pre><code>bg-white</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>background-color: var(--color-white); /* #fff */</code></pre>
+                                                <pre><code>background-color: var(--color-white);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -4460,7 +4460,7 @@
                                                 <pre><code>bg-red-50</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>background-color: var(--color-red-50); /* oklch(0.971 0.013 17.38) */</code></pre>
+                                                <pre><code>background-color: var(--color-red-50);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -4501,66 +4501,274 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-auto</code></pre>
+                                                <pre><code>bg-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: auto;</code></pre>
+                                                <pre><code>background-image: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid</code></pre>
+                                                <pre><code>bg-(image:&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid;</code></pre>
+                                                <pre><code>background-image: var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-all</code></pre>
+                                                <pre><code>bg-none</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: all;</code></pre>
+                                                <pre><code>background-image: none;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid-page</code></pre>
+                                                <pre><code>bg-linear-to-t</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid-page;</code></pre>
+                                                <pre><code>background-image: linear-gradient(to top, var(--tw-gradient-stops));</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-page</code></pre>
+                                                <pre><code>bg-linear-to-tr</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: page;</code></pre>
+                                                <pre><code>background-image: linear-gradient(to top right, var(--tw-gradient-stops));</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-left</code></pre>
+                                                <pre><code>bg-linear-to-r</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: left;</code></pre>
+                                                <pre><code>background-image: linear-gradient(to right, var(--tw-gradient-stops));</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-right</code></pre>
+                                                <pre><code>bg-linear-to-br</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: right;</code></pre>
+                                                <pre><code>background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-column</code></pre>
+                                                <pre><code>bg-linear-to-b</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: column;</code></pre>
+                                                <pre><code>background-image: linear-gradient(to bottom, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-to-bl</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-to-l</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(to left, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-to-tl</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(to top left, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-&lt;angle&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>bbackground-image: linear-gradient(&lt;angle&gt; in oklab, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>-bg-linear-&lt;angle&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(-&lt;angle&gt; in oklab, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(var(--tw-gradient-stops, var(&lt;custom-property&gt;)));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-linear-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: linear-gradient(var(--tw-gradient-stops, &lt;value&gt;));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-radial</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: radial-gradient(in oklab, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-radial-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: radial-gradient(var(--tw-gradient-stops,  var(&lt;custom-property&gt;)));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-radial-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: radial-gradient(var(--tw-gradient-stops, &lt;value&gt;));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-conic-&lt;angle&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: conic-gradient(from &lt;angle&gt; in oklab, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>-bg-conic-&lt;angle&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: conic-gradient(from -&lt;angle&gt; in oklab, var(--tw-gradient-stops));</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-conic-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-conic-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-image: &lt;image&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>from-&lt;color&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-from: &lt;color&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>from-&lt;percentage&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-from-position: &lt;percentage&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>from-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-from: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>from-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-from: &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>via-&lt;color&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-via: &lt;color&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>via-&lt;percentage&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-via-position: &lt;percentage&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>via-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-via: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>via-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-via: &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>to-&lt;color&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-to: &lt;color&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>to-&lt;percentage&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-to-position: &lt;percentage&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>to-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-to: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>to-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-gradient-to: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -4585,34 +4793,26 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-auto</code></pre>
+                                                <pre><code>bg-origin-border</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: auto;</code></pre>
+                                                <pre><code>background-origin: border-box;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-avoid</code></pre>
+                                                <pre><code>bg-origin-padding</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: avoid;</code></pre>
+                                                <pre><code>background-origin: padding-box;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-avoid-page</code></pre>
+                                                <pre><code>bg-origin-content</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: avoid-page;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-inside-column</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-inside: column;</code></pre>
+                                                <pre><code>background-origin: content-box;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -4637,18 +4837,90 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>box-decoration-clone</code></pre>
+                                                <pre><code>bg-bottom</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-decoration-break: clone</code></pre>
+                                                <pre><code>background-position: bottom;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>box-decoration-slice</code></pre>
+                                                <pre><code>bg-center</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-decoration-break: slice</code></pre>
+                                                <pre><code>background-position: center;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-left</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: left;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-left-bottom</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: left bottom;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-left-top</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: left top;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-right</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: right;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-right-bottom</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: right bottom;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-right-top</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: right top;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-top</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: top;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-(position:&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-position: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -4673,18 +4945,50 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>box-border</code></pre>
+                                                <pre><code>bg-repeat</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-sizing: border-box</code></pre>
+                                                <pre><code>background-repeat: repeat;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>box-content</code></pre>
+                                                <pre><code>bg-repeat-y</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-sizing: content-box</code></pre>
+                                                <pre><code>background-repeat: repeat-y;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-repeat</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-repeat: repeat;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-repeat-space</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-repeat: space;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-repeat-round</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-repeat: round;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-no-repeat</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-repeat: no-repeat;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -4699,7 +5003,56 @@
                             <div id="background-size-collapse"
                                 class="accordion-content w-full overflow-hidden transition-all duration-300 max-h-0"
                                 aria-labelledby="background-size" role="region">
-                                this is content that should be hidden by default
+                                <table class="table-auto w-full">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center py-2">Class</th>
+                                            <th class="text-center py-2">Styles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-base">
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-auto</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-size: auto;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-cover</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-size: cover;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-contain</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-size: contain;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-(length:&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-size: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-size: &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -5267,42 +5620,1058 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-square</code></pre>
+                                                <pre><code>shadow-xs</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: 1 / 1;</code></pre>
+                                                <pre><code>box-shadow: var(--shadow-xs); /* 0 1px 2px 0 rgb(0 0 0 / 0.05) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-video</code></pre>
+                                                <pre><code>shadow-sm</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: var(--aspect-ratio-video); /* 16 / 9 */</code></pre>
+                                                <pre><code>box-shadow: var(--shadow-sm); /* 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-auto</code></pre>
+                                                <pre><code>shadow-md</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: auto;</code></pre>
+                                                <pre><code>box-shadow: var(--shadow-md); /* 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-(&lt;custom-property&gt;)</code></pre>
+                                                <pre><code>shadow-lg</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: var(&lt;custom-property&gt;);</code></pre>
+                                                <pre><code>box-shadow: var(--shadow-lg); /* 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-[&lt;value&gt;]</code></pre>
+                                                <pre><code>shadow-xl</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: &lt;value&gt;;</code></pre>
+                                                <pre><code>abox-shadow: var(--shadow-xl); /* 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-2xl</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(--shadow-2xl); /* 0 25px 50px -12px rgb(0 0 0 / 0.25) */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-none</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: 0 0 #0000;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-(color:&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-inherit</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: inherit;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-current</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: currentColor;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-transparent</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: transparent;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-black</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-black);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-white</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-white);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-red-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-red-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-orange-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-orange-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-amber-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-amber-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-yellow-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-yellow-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-lime-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-lime-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-green-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-green-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-emerald-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-emerald-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-teal-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-teal-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-cyan-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-cyan-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-sky-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-sky-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-blue-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-blue-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-indigo-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-indigo-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-violet-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-violet-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-purple-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-purple-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-fuchsia-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-fuchsia-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-pink-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-pink-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-rose-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-rose-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-slate-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-slate-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-gray-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-gray-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-zinc-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-zinc-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-neutral-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-neutral-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>shadow-stone-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-shadow-color: var(--color-stone-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-2xs</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(--inset-shadow-2xs); /* inset 0 1px rgb(0 0 0 / 0.05) */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-xs</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(--inset-shadow-xs); /* inset 0 1px 1px rgb(0 0 0 / 0.05) */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-sm</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(--inset-shadow-sm); /* inset 0 2px 4px rgb(0 0 0 / 0.05) */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-none</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: inset 0 0 #0000;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>box-shadow: &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-inherit</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: inherit;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-current</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: currentColor;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-transparent</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: transparent;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-black</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-black);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-white</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-white);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-red-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-red-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-orange-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-orange-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-amber-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-amber-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-yellow-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-yellow-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-lime-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-lime-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-green-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-green-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-emerald-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-emerald-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-teal-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-teal-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-cyan-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-cyan-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-sky-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-sky-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-blue-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-blue-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-indigo-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-indigo-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-violet-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-violet-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-purple-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-purple-50);/code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-fuchsia-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-fuchsia-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-pink-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-pink-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-rose-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-rose-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-slate-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-slate-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-gray-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-gray-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-zinc-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-zinc-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-neutral-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-neutral-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-shadow-stone-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-shadow-color: var(--color-stone-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-shadow: 0 0 0 1px;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-&lt;number&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-shadow: 0 0 0 &lt;number&gt;px;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-shadow: 0 0 0 var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-shadow: 0 0 0 &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-inherit</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: inherit;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-current</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: currentColor;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-transparent</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: transparent;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-black</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-black);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-white</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-white);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-red-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-red-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-orange-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-orange-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-amber-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-amber-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-shadow-yellow-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-shadow-color: var(--color-yellow-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-shadow-lime-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-lime-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-green-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-green-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-emerald-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-emerald-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-teal-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-teal-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-cyan-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-cyan-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-sky-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-sky-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-blue-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-blue-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-indigo-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-indigo-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-violet-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-violet-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-purple-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-purple-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-fuchsia-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-fuchsia-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-pink-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-pink-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-rose-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-rose-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-slate-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-slate-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-gray-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-gray-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-zinc-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-zinc-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-neutral-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-neutral-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>ring-stone-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-ring-color: var(--color-stone-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-shadow: 0 0 0 1px;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-&lt;number&gt;</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-shadow: 0 0 0 &lt;number&gt;px;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-shadow: 0 0 0 var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-shadow: 0 0 0 &lt;value&gt;;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-inherit</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: inherit;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-current</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: currentColor;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-transparent</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: transparent;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-black</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-black);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-white</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-white);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-red-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-red-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-orange-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-orange-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-amber-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-amber-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-shadow-yellow-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-shadow-color: var(--color-yellow-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-shadow-lime-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-lime-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-green-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-green-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-emerald-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-emerald-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-teal-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-teal-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-cyan-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-cyan-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-sky-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-sky-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-blue-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-blue-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-indigo-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-indigo-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-violet-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-violet-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-purple-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-purple-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-fuchsia-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-fuchsia-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-pink-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-pink-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-rose-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-rose-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-slate-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-slate-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-gray-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-gray-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-zinc-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-zinc-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-neutral-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-neutral-50);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>inset-ring-stone-50</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>--tw-inset-ring-color: var(--color-stone-50);</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -5327,138 +6696,26 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>columns-&lt;number&gt;</code></pre>
+                                                <pre><code>opacity-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>columns: &lt;number&gt;;</code></pre>
+                                                <pre><code>opacity: &lt;number&gt;;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>columns-3xs</code></pre>
+                                                <pre><code>opacity-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>columns: var(--container-3xs); /* 16rem (256px) */</code></pre>
+                                                <pre><code>opacity: var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>columns-2xs</code></pre>
+                                                <pre><code>opacity-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>columns: var(--container-2xs); /* 18rem (288px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-xs</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-xs); /* 20rem (320px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-sm</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-sm); /* 24rem (384px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-md</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-md); /* 28rem (448px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-lg</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-lg); /* 32rem (512px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-xl); /* 36rem (576px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-2xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-2xl); /* 42rem (672px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-3xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-3xl); /* 48rem (768px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-4xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-4xl); /* 56rem (896px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-5xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-5xl); /* 64rem (1024px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-6xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-6xl); /* 72rem (1152px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-7xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-7xl); /* 80rem (1280px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-auto</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: auto;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-(&lt;custom-property&gt;)</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(&lt;custom-property&gt;);</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-[&lt;value&gt;]</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: &lt;value&gt;;</code></pre>
+                                                <pre><code>opacity: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -5483,74 +6740,153 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-auto</code></pre>
+                                                <pre><code>mix-blend-normal</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: auto;</code></pre>
+                                                <pre><code>mix-blend-mode: normal;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-avoid</code></pre>
+                                                <pre><code>mix-blend-multiply</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: avoid;</code></pre>
+                                                <pre><code>mix-blend-mode: multiply;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-all</code></pre>
+                                                <pre><code>mix-blend-screen</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: all;</code></pre>
+                                                <pre><code>mix-blend-mode: screen;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-avoid-page</code></pre>
+                                                <pre><code>mix-blend-overlay</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: avoid-page;</code></pre>
+                                                <pre><code>mix-blend-mode: overlay;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-page</code></pre>
+                                                <pre><code>mix-blend-darken</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: page;</code></pre>
+                                                <pre><code>mix-blend-mode: darken;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-left</code></pre>
+                                                <pre><code>mix-blend-lighten</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: left;</code></pre>
+                                                <pre><code>mix-blend-mode: lighten;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-right</code></pre>
+                                                <pre><code>mix-blend-color-dodge</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: right;</code></pre>
+                                                <pre><code>mix-blend-mode: color-dodge;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-column</code></pre>
+                                                <pre><code>mix-blend-color-burn</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: column;</code></pre>
+                                                <pre><code>mix-blend-mode: color-burn;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-hard-light</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: hard-light;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-soft-light</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: soft-light;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-difference</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: difference;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-exclusion</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: exclusion;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-hue</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: hue;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-saturation</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: saturation;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-color</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: color;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-luminosity</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: luminosity;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-plus-darker</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: plus-darker;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>mix-blend-plus-lighter</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>mix-blend-mode: plus-lighter;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="accordion-item" id="background-blend-mode
-">
+                        <div class="accordion-item" id="background-blend-mode">
                             <button class="accordion-toggle text-start w-full p-2 font-medium shadow"
                                 aria-controls="background-blend-mode-collapse" aria-expanded="false">
                                 background-blend-mode
@@ -5568,66 +6904,130 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-auto</code></pre>
+                                                <pre><code>bg-blend-normal</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: auto;</code></pre>
+                                                <pre><code>background-blend-mode: normal;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid</code></pre>
+                                                <pre><code>bg-blend-multiply</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid;</code></pre>
+                                                <pre><code>background-blend-mode: multiply;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-all</code></pre>
+                                                <pre><code>bg-blend-screen</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: all;</code></pre>
+                                                <pre><code>background-blend-mode: screen;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid-page</code></pre>
+                                                <pre><code>bg-blend-overlay</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid-page;</code></pre>
+                                                <pre><code>background-blend-mode: overlay;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-page</code></pre>
+                                                <pre><code>bg-blend-darken</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: page;</code></pre>
+                                                <pre><code>background-blend-mode: darken;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-left</code></pre>
+                                                <pre><code>bg-blend-lighten</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: left;</code></pre>
+                                                <pre><code>background-blend-mode: lighten;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-right</code></pre>
+                                                <pre><code>bg-blend-color-dodge</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: right;</code></pre>
+                                                <pre><code>background-blend-mode: color-dodge;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-column</code></pre>
+                                                <pre><code>bg-blend-color-burn</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: column;</code></pre>
+                                                <pre><code>background-blend-mode: color-burn;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-hard-light</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: hard-light;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-soft-light</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: soft-light;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-difference</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: difference;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-exclusion</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: exclusion;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-hue</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: hue;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-saturation</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: saturation;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-color</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: color;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>bg-blend-luminosity</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>background-blend-mode: luminosity;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -6586,50 +7986,90 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-&lt;ratio&gt;</code></pre>
+                                                <pre><code>transition</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: &lt;ratio&gt;;</code></pre>
+                                                <pre><code>transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-square</code></pre>
+                                                <pre><code>transition-all</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: 1 / 1;</code></pre>
+                                                <pre><code>transition-property: all;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-video</code></pre>
+                                                <pre><code>transition-colors</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: var(--aspect-ratio-video); /* 16 / 9 */</code></pre>
+                                                <pre><code>transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-auto</code></pre>
+                                                <pre><code>transition-opacity</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: auto;</code></pre>
+                                                <pre><code>transition-property: opacity;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-(&lt;custom-property&gt;)</code></pre>
+                                                <pre><code>transition-shadow</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: var(&lt;custom-property&gt;);</code></pre>
+                                                <pre><code>transition-property: box-shadow;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>aspect-[&lt;value&gt;]</code></pre>
+                                                <pre><code>transition-transform</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>aspect-ratio: &lt;value&gt;;</code></pre>
+                                                <pre><code>transition-property: transform, translate, scale, rotate;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>transition-none</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>transition-property: none;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>transition-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>transition-property: var(&lt;custom-property&gt;);</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>transition-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>transition-property: &lt;value&gt;;</code></pre>
+                                                <pre><code>transition-timing-function: var(--default-transition-timing-function); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
+                                                <pre><code>transition-duration: var(--default-transition-duration); /* 150ms */</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -6654,138 +8094,18 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>columns-&lt;number&gt;</code></pre>
+                                                <pre><code>transition-normal</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>columns: &lt;number&gt;;</code></pre>
+                                                <pre><code>transition-behavior: normal;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>columns-3xs</code></pre>
+                                                <pre><code>transition-discrete</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>columns: var(--container-3xs); /* 16rem (256px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-2xs</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-2xs); /* 18rem (288px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-xs</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-xs); /* 20rem (320px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-sm</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-sm); /* 24rem (384px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-md</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-md); /* 28rem (448px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-lg</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-lg); /* 32rem (512px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-xl); /* 36rem (576px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-2xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-2xl); /* 42rem (672px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-3xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-3xl); /* 48rem (768px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-4xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-4xl); /* 56rem (896px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-5xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-5xl); /* 64rem (1024px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-6xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-6xl); /* 72rem (1152px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-7xl</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(--container-7xl); /* 80rem (1280px) */</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-auto</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: auto;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-(&lt;custom-property&gt;)</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: var(&lt;custom-property&gt;);</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>columns-[&lt;value&gt;]</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>columns: &lt;value&gt;;</code></pre>
+                                                <pre><code>transition-behavior: allow-discrete;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -6810,66 +8130,34 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-auto</code></pre>
+                                                <pre><code>duration-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: auto;</code></pre>
+                                                <pre><code>transition-duration: &lt;number&gt;ms;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-avoid</code></pre>
+                                                <pre><code>duration-initial</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: avoid;</code></pre>
+                                                <pre><code>transition-duration: initial;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-all</code></pre>
+                                                <pre><code>duration-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: all;</code></pre>
+                                                <pre><code>transition-duration: var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-after-avoid-page</code></pre>
+                                                <pre><code>duration-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-after: avoid-page;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-after-page</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-after: page;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-after-left</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-after: left;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-after-right</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-after: right;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-after-column</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-after: column;</code></pre>
+                                                <pre><code>transition-duration: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -6894,66 +8182,58 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-auto</code></pre>
+                                                <pre><code>ease-linear</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: auto;</code></pre>
+                                                <pre><code>transition-timing-function: linear;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid</code></pre>
+                                                <pre><code>ease-in</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid;</code></pre>
+                                                <pre><code>transition-timing-function: var(--ease-in); /* cubic-bezier(0.4, 0, 1, 1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-all</code></pre>
+                                                <pre><code>ease-out</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: all;</code></pre>
+                                                <pre><code>transition-timing-function: var(--ease-out); /* cubic-bezier(0, 0, 0.2, 1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-avoid-page</code></pre>
+                                                <pre><code>ease-in-out</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: avoid-page;</code></pre>
+                                                <pre><code>transition-timing-function: var(--ease-in-out); /* cubic-bezier(0.4, 0, 0.2, 1) */</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-page</code></pre>
+                                                <pre><code>ease-initial</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: page;</code></pre>
+                                                <pre><code>transition-timing-function: initial;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-left</code></pre>
+                                                <pre><code>ease-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: left;</code></pre>
+                                                <pre><code>transition-timing-function: var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-before-right</code></pre>
+                                                <pre><code>ease-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-before: right;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-before-column</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-before: column;</code></pre>
+                                                <pre><code>transition-timing-function: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -6978,34 +8258,26 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-auto</code></pre>
+                                                <pre><code>delay-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: auto;</code></pre>
+                                                <pre><code>transition-delay: &lt;number&gt;ms;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-avoid</code></pre>
+                                                <pre><code>delay-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: avoid;</code></pre>
+                                                <pre><code>transition-delay: var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>break-inside-avoid-page</code></pre>
+                                                <pre><code>delay-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>break-inside: avoid-page;</code></pre>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <pre><code>break-inside-column</code></pre>
-                                            </td>
-                                            <td class="pl-10">
-                                                <pre><code>break-inside: column;</code></pre>
+                                                <pre><code>transition-delay: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -7030,18 +8302,84 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>box-decoration-clone</code></pre>
+                                                <pre><code>animate-spin</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-decoration-break: clone</code></pre>
+                                                <pre><code>animation: var(--animate-spin); /* spin 1s linear infinite */</code></pre>
+                                                <pre><code>@keyframes spin {</code></pre>
+                                                <pre><code>   to {</code></pre>
+                                                <pre><code>      transform: rotate(360deg);</code></pre>
+                                                <pre><code>   }</code></pre>
+                                                <pre><code>}</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>box-decoration-slice</code></pre>
+                                                <pre><code>animate-ping</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>box-decoration-break: slice</code></pre>
+                                                <pre><code>animation: var(--animate-ping); /* ping 1s cubic-bezier(0, 0, 0.2, 1) infinite */</code></pre>
+                                                <pre><code>@keyframes ping {</code></pre>
+                                                <pre><code>   75%, 100% {</code></pre>
+                                                <pre><code>      transform: scale(2);</code></pre>
+                                                <pre><code>      opacity: 0;</code></pre>
+                                                <pre><code>   }</code></pre>
+                                                <pre><code>}</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>animate-pulse</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>animation: var(--animate-pulse); /* pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite */</code></pre>
+                                                <pre><code>@keyframes pulse {</code></pre>
+                                                <pre><code>    50% {</code></pre>
+                                                <pre><code>      opacity: 0.5;</code></pre>
+                                                <pre><code>    }</code></pre>
+                                                <pre><code>}</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>animate-bounce</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>animation: var(--animate-bounce); /* bounce 1s infinite */</code></pre>
+                                                <pre><code>@keyframes bounce {</code></pre>
+                                                <pre><code>    0%, 100% {</code></pre>
+                                                <pre><code>      transform: translateY(-25%);</code></pre>
+                                                <pre><code>      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);</code></pre>
+                                                <pre><code>    }</code></pre>
+                                                <pre><code>    50% {</code></pre>
+                                                <pre><code>      transform: none;</code></pre>
+                                                <pre><code>      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);</code></pre>
+                                                <pre><code>    }</code></pre>
+                                                <pre><code>}</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>animate-none</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>animation: none;</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>animate-(&lt;custom-property&gt;)</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>animation: var(&lt;custom-property&gt;);</code></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre><code>animate-[&lt;value&gt;]</code></pre>
+                                            </td>
+                                            <td class="pl-10">
+                                                <pre><code>animation: &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -7072,7 +8410,7 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>abackface-hidden</code></pre>
+                                                <pre><code>backface-hidden</code></pre>
                                             </td>
                                             <td class="pl-10">
                                                 <pre><code>backface-visibility: hidden;</code></pre>
@@ -7324,8 +8662,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>rotate-(&lt;custom-property&gt;)
-                                                </code></pre>
+                                                <pre><code>rotate-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
                                                 <pre><code>rotate: var(&lt;custom-property&gt;);</code></pre>
@@ -7656,8 +8993,7 @@
                                                 <pre><code>skew-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>
-                                                    transform: skewX(&lt;value&gt;) skewY(&lt;value&gt;);</code></pre>
+                                                <pre><code>transform: skewX(&lt;value&gt;) skewY(&lt;value&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -7942,34 +9278,34 @@
                                     <tbody class="text-base">
                                         <tr>
                                             <td>
-                                                <pre><code>translate-<number></code></pre>
+                                                <pre><code>translate-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(var(--spacing) * <number>) calc(var(--spacing) * <number>);</code></pre>
+                                                <pre><code>translate: calc(var(--spacing) * &lt;number&gt;) calc(var(--spacing) * &lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-<number></code></pre>
+                                                <pre><code>-translate-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(var(--spacing) * -<number>) calc(var(--spacing) * -<number>);</code></pre>
+                                                <pre><code>translate: calc(var(--spacing) * -&lt;number&gt;) calc(var(--spacing) * -&lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-<fraction></code></pre>
+                                                <pre><code>translate-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(<fraction> * 100%) calc(<fraction> * 100%);</code></pre>
+                                                <pre><code>translate: calc(&lt;fraction&gt; * 100%) calc(&lt;fraction&gt; * 100%);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-<fraction></code></pre>
+                                                <pre><code>-translate-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(<fraction> * -100%) calc(<fraction> * -100%);</code></pre>
+                                                <pre><code>translate: calc(&lt;fraction&gt; * -100%) calc(&lt;fraction&gt; * -100%);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8009,48 +9345,47 @@
                                                 <pre><code>translate-(<custom-property>)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(<custom-property>) var(<custom-property>);</code></pre>
+                                                <pre><code>translate: var(&lt;custom-property&gt;) var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-[<value>]</code></pre>
+                                                <pre><code>translate-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: <value> <value>;</code></pre>
+                                                <pre><code>translate: &lt;value&gt; &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-x-<number></code></pre>
+                                                <pre><code>translate-x-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(var(--spacing) * <number>) var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: calc(var(--spacing) * &lt;number&gt;) var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-x-<number></code></pre>
+                                                <pre><code>-translate-x-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>
-                                                    translate: calc(var(--spacing) * -<number>) var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: calc(var(--spacing) * -&lt;number&gt;) var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-x-<fraction></code></pre>
+                                                <pre><code>translate-x-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(<fraction> * 100%) var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: calc(&lt;fraction&gt; * 100%) var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-x-<fraction></code></pre>
+                                                <pre><code>-translate-x-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: calc(<fraction> * -100%) var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: calc(&lt;fraction&gt; * -100%) var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8087,50 +9422,50 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-x-(<custom-property>)</code></pre>
+                                                <pre><code>translate-x-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(<custom-property>) var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: var(&lt;custom-property&gt;) var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-x-[<value>]</code></pre>
+                                                <pre><code>translate-x-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: <value> var(--tw-translate-y);</code></pre>
+                                                <pre><code>translate: &lt;value&gt; var(--tw-translate-y);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-y-<number></code></pre>
+                                                <pre><code>translate-y-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) calc(var(--spacing) * <number>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) calc(var(--spacing) * &lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-y-<number></code></pre>
+                                                <pre><code>-translate-y-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) calc(var(--spacing) * -<number>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) calc(var(--spacing) * -&lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-y-<fraction></code></pre>
+                                                <pre><code>translate-y-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) calc(<fraction> * 100%);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) calc(&lt;fraction&gt; * 100%);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-y-<fraction></code></pre>
+                                                <pre><code>-translate-y-&lt;fraction&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) calc(<fraction> * -100%);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) calc(&lt;fraction&gt; * -100%);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8167,35 +9502,34 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-y-(<custom-property>)</code></pre>
+                                                <pre><code>translate-y-(&lt;custom-property&gt;)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) var(<custom-property>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-y-[<value>]</code></pre>
+                                                <pre><code>translate-y-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) <value>;</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-z-<number></code></pre>
+                                                <pre><code>translate-z-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) calc(var(--spacing) * <number>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) calc(var(--spacing) * &lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>-translate-z-<number></code></pre>
+                                                <pre><code>-translate-z-&lt;number&gt;</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>
-                                                    translate: var(--tw-translate-x) var(--tw-translate-y) calc(var(--spacing) * -<number>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) calc(var(--spacing) * -&lt;number&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8219,15 +9553,15 @@
                                                 <pre><code>translate-z-(<custom-property>)</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) var(<custom-property>);</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) var(&lt;custom-property&gt;);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <pre><code>translate-z-[<value>]</code></pre>
+                                                <pre><code>translate-z-[&lt;value&gt;]</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) <value>;</code></pre>
+                                                <pre><code>translate: var(--tw-translate-x) var(--tw-translate-y) &lt;value&gt;;</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8813,7 +10147,7 @@
                                                 <pre><code>fill-black</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>fill: var(--color-black); /* #000 */</code></pre>
+                                                <pre><code>fill: var(--color-black);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8821,7 +10155,7 @@
                                                 <pre><code>fill-white</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>fill: var(--color-white); /* #fff */</code></pre>
+                                                <pre><code>fill: var(--color-white);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8829,7 +10163,7 @@
                                                 <pre><code>fill-red-50</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>fill: var(--color-red-50); /* oklch(0.971 0.013 17.38) */</code></pre>
+                                                <pre><code>fill: var(--color-red-50);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8905,7 +10239,7 @@
                                                 <pre><code>stroke-black</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>stroke: var(--color-black); /* #000 */</code></pre>
+                                                <pre><code>stroke: var(--color-black);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8913,7 +10247,7 @@
                                                 <pre><code>stroke-white</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>stroke: var(--color-white); /* #fff */</code></pre>
+                                                <pre><code>stroke: var(--color-white);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>
@@ -8921,7 +10255,7 @@
                                                 <pre><code>stroke-red-50</code></pre>
                                             </td>
                                             <td class="pl-10">
-                                                <pre><code>stroke: var(--color-red-50); /* oklch(0.971 0.013 17.38) */</code></pre>
+                                                <pre><code>stroke: var(--color-red-50);</code></pre>
                                             </td>
                                         </tr>
                                         <tr>

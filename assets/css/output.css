@@ -695,6 +695,66 @@
   .z-auto {
     z-index: auto;
   }
+  .order-\[\&lt\;value\&gt\;\] {
+    order: &lt;value&gt;;
+  }
+  .order-first {
+    order: -9999;
+  }
+  .order-last {
+    order: 9999;
+  }
+  .order-none {
+    order: 0;
+  }
+  .col-\[\&lt\;value\&gt\;\] {
+    grid-column: &lt;value&gt;;
+  }
+  .col-auto {
+    grid-column: auto;
+  }
+  .col-span-\[\&lt\;value\&gt\;\] {
+    grid-column: span &lt;value&gt; / span &lt;value&gt;;
+  }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
+  .col-start-\[\&lt\;value\&gt\;\] {
+    grid-column-start: &lt;value&gt;;
+  }
+  .col-start-auto {
+    grid-column-start: auto;
+  }
+  .col-end-\[\&lt\;value\&gt\;\] {
+    grid-column-end: &lt;value&gt;;
+  }
+  .col-end-auto {
+    grid-column-end: auto;
+  }
+  .row-\[\&lt\;value\&gt\;\] {
+    grid-row: &lt;value&gt;;
+  }
+  .row-auto {
+    grid-row: auto;
+  }
+  .row-span-\[\&lt\;value\&gt\;\] {
+    grid-row: span &lt;value&gt; / span &lt;value&gt;;
+  }
+  .row-span-full {
+    grid-row: 1 / -1;
+  }
+  .row-start-\[\&lt\;value\&gt\;\] {
+    grid-row-start: &lt;value&gt;;
+  }
+  .row-start-auto {
+    grid-row-start: auto;
+  }
+  .row-end-\[\&lt\;value\&gt\;\] {
+    grid-row-end: &lt;value&gt;;
+  }
+  .row-end-auto {
+    grid-row-end: auto;
+  }
   .float-end {
     float: inline-end;
   }
@@ -752,8 +812,44 @@
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
   }
+  .-m-px {
+    margin: -1px;
+  }
+  .m-\[\&lt\;value\&gt\;\] {
+    margin: &lt;value&gt;;
+  }
+  .m-\[\&lt\;value\>\] {
+    margin: &lt;value>;
+  }
+  .m-\[\<value\>\] {
+    margin: <value>;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  .m-px {
+    margin: 1px;
+  }
+  .-mx-px {
+    margin-inline: -1px;
+  }
+  .mx-\[\&lt\;value\&gt\;\] {
+    margin-inline: &lt;value&gt;;
+  }
+  .mx-\[\&lt\;value\>\] {
+    margin-inline: &lt;value>;
+  }
+  .mx-\[\<value\>\] {
+    margin-inline: <value>;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mx-px {
+    margin-inline: 1px;
+  }
+  .-my-px {
+    margin-block: -1px;
   }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
@@ -761,11 +857,131 @@
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
+  .my-\[\&lt\;value\&gt\;\] {
+    margin-block: &lt;value&gt;;
+  }
+  .my-\[\&lt\;value\>\] {
+    margin-block: &lt;value>;
+  }
+  .my-\[\<value\>\] {
+    margin-block: <value>;
+  }
+  .my-auto {
+    margin-block: auto;
+  }
+  .my-px {
+    margin-block: 1px;
+  }
+  .-ms-px {
+    margin-inline-start: -1px;
+  }
+  .ms-\[\&lt\;value\&gt\;\] {
+    margin-inline-start: &lt;value&gt;;
+  }
+  .ms-\[\&lt\;value\>\] {
+    margin-inline-start: &lt;value>;
+  }
+  .ms-\[\<value\>\] {
+    margin-inline-start: <value>;
+  }
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  .ms-px {
+    margin-inline-start: 1px;
+  }
+  .-me-px {
+    margin-inline-end: -1px;
+  }
+  .me-\[\&lt\;value\&gt\;\] {
+    margin-inline-end: &lt;value&gt;;
+  }
+  .me-\[\&lt\;value\>\] {
+    margin-inline-end: &lt;value>;
+  }
+  .me-\[\<value\>\] {
+    margin-inline-end: <value>;
+  }
+  .me-auto {
+    margin-inline-end: auto;
+  }
+  .me-px {
+    margin-inline-end: 1px;
+  }
+  .-mt-px {
+    margin-top: -1px;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-\[\&lt\;value\&gt\;\] {
+    margin-top: &lt;value&gt;;
+  }
+  .mt-\[\&lt\;value\>\] {
+    margin-top: &lt;value>;
+  }
+  .mt-\[\<value\>\] {
+    margin-top: <value>;
+  }
+  .mt-auto {
+    margin-top: auto;
+  }
+  .mt-px {
+    margin-top: 1px;
+  }
+  .mr-\[\&lt\;value\&gt\;\] {
+    margin-right: &lt;value&gt;;
+  }
+  .mr-\[\&lt\;value\>\] {
+    margin-right: &lt;value>;
+  }
+  .mr-\[\<value\>\] {
+    margin-right: <value>;
+  }
+  .mr-auto {
+    margin-right: auto;
+  }
+  .mr-px {
+    margin-right: 1px;
+  }
+  .-mb-px {
+    margin-bottom: -1px;
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-\[\&lt\;value\&gt\;\] {
+    margin-bottom: &lt;value&gt;;
+  }
+  .mb-\[\&lt\;value\>\] {
+    margin-bottom: &lt;value>;
+  }
+  .mb-\[\<value\>\] {
+    margin-bottom: <value>;
+  }
+  .mb-auto {
+    margin-bottom: auto;
+  }
+  .mb-px {
+    margin-bottom: 1px;
+  }
+  .-ml-px {
+    margin-left: -1px;
+  }
+  .ml-\[\&lt\;value\&gt\;\] {
+    margin-left: &lt;value&gt;;
+  }
+  .ml-\[\&lt\;value\>\] {
+    margin-left: &lt;value>;
+  }
+  .ml-\[\<value\>\] {
+    margin-left: <value>;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .ml-px {
+    margin-left: 1px;
   }
   .box-border {
     box-sizing: border-box;
@@ -874,11 +1090,83 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-\[\&lt\;value\&gt\;\] {
+    flex: &lt;value&gt;;
+  }
+  .flex-auto {
+    flex: auto;
+  }
+  .flex-initial {
+    flex: 0 auto;
+  }
+  .flex-none {
+    flex: none;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
+  .shrink {
+    flex-shrink: 1;
+  }
+  .shrink-\[\&lt\;value\&gt\;\] {
+    flex-shrink: &lt;value&gt;;
+  }
   .flex-grow {
     flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .grow-\[\&lt\;value\&gt\;\] {
+    flex-grow: &lt;value&gt;;
+  }
+  .basis-2xl {
+    flex-basis: var(--container-2xl);
+  }
+  .basis-2xs {
+    flex-basis: var(--container-2xs);
+  }
+  .basis-3xl {
+    flex-basis: var(--container-3xl);
+  }
+  .basis-3xs {
+    flex-basis: var(--container-3xs);
+  }
+  .basis-4xl {
+    flex-basis: var(--container-4xl);
+  }
+  .basis-5xl {
+    flex-basis: var(--container-5xl);
+  }
+  .basis-6xl {
+    flex-basis: var(--container-6xl);
+  }
+  .basis-7xl {
+    flex-basis: var(--container-7xl);
+  }
+  .basis-\[\&lt\;value\&gt\;\] {
+    flex-basis: &lt;value&gt;;
+  }
+  .basis-auto {
+    flex-basis: auto;
+  }
+  .basis-full {
+    flex-basis: 100%;
+  }
+  .basis-lg {
+    flex-basis: var(--container-lg);
+  }
+  .basis-md {
+    flex-basis: var(--container-md);
+  }
+  .basis-sm {
+    flex-basis: var(--container-sm);
+  }
+  .basis-xl {
+    flex-basis: var(--container-xl);
+  }
+  .basis-xs {
+    flex-basis: var(--container-xs);
   }
   .table-auto {
     table-layout: auto;
@@ -914,17 +1202,8 @@
   .origin-\[\&lt\;value\&gt\;\] {
     transform-origin: &lt;value&gt;;
   }
-  .origin-\[\&lt\;value\>\] {
-    transform-origin: &lt;value>;
-  }
-  .origin-\[\<value\>\] {
-    transform-origin: <value>;
-  }
   .origin-bottom {
     transform-origin: bottom;
-  }
-  .origin-bottom-left {
-    transform-origin: bottom left;
   }
   .origin-bottom-right {
     transform-origin: bottom right;
@@ -962,16 +1241,6 @@
     --tw-translate-y: &lt;value&gt;;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-\[\&lt\;value\>\] {
-    --tw-translate-x: &lt;value>;
-    --tw-translate-y: &lt;value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-\[\<value\>\] {
-    --tw-translate-x: <value>;
-    --tw-translate-y: <value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
@@ -1002,14 +1271,6 @@
     --tw-translate-x: &lt;value&gt;;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-\[\&lt\;value\>\] {
-    --tw-translate-x: &lt;value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-\[\<value\>\] {
-    --tw-translate-x: <value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-x-full {
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1030,18 +1291,6 @@
     --tw-translate-y: &lt;value&gt;;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-y-\[\&lt\;value\>\] {
-    --tw-translate-y: &lt;value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[\&value\>\] {
-    --tw-translate-y: &value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[\<value\>\] {
-    --tw-translate-y: <value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-y-full {
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1058,14 +1307,6 @@
     --tw-translate-z: &lt;value&gt;;
     translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
   }
-  .translate-z-\[\&lt\;value\>\] {
-    --tw-translate-z: &lt;value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
-  }
-  .translate-z-\[\<value\>\] {
-    --tw-translate-z: <value>;
-    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
-  }
   .translate-z-px {
     --tw-translate-z: 1px;
     translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
@@ -1077,36 +1318,12 @@
     --tw-scale-x: &lt;value&gt;;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
-  .scale-x-\[\&lt\;value\>\] {
-    --tw-scale-x: &lt;value>;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  .scale-x-\[\<value\>\] {
-    --tw-scale-x: <value>;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
   .scale-y-\[\&lt\;value\&gt\;\] {
     --tw-scale-y: &lt;value&gt;;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
-  .scale-y-\[\&lt\;value\>\] {
-    --tw-scale-y: &lt;value>;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  .scale-y-\[\<value\>\] {
-    --tw-scale-y: <value>;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
   .scale-z-\[\&lt\;value\&gt\;\] {
     --tw-scale-z: &lt;value&gt;;
-    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
-  }
-  .scale-z-\[\&lt\;value\>\] {
-    --tw-scale-z: &lt;value>;
-    scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
-  }
-  .scale-z-\[\<value\>\] {
-    --tw-scale-z: <value>;
     scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
   }
   .scale-3d {
@@ -1114,15 +1331,6 @@
   }
   .scale-\[\&lt\;value\&gt\;\] {
     scale: &lt;value&gt;;
-  }
-  .scale-\[\&lt\;value\>\] {
-    scale: &lt;value>;
-  }
-  .scale-\[\<value\>\] {
-    scale: <value>;
-  }
-  .scale-\[value\>\] {
-    scale: value>;
   }
   .scale-none {
     scale: none;
@@ -1133,12 +1341,6 @@
   .rotate-\[\&lt\;value\&gt\;\] {
     rotate: &lt;value&gt;;
   }
-  .rotate-\[\&lt\;value\>\] {
-    rotate: &lt;value>;
-  }
-  .rotate-\[\<value\>\] {
-    rotate: <value>;
-  }
   .rotate-none {
     rotate: none;
   }
@@ -1146,40 +1348,12 @@
     --tw-rotate-x: rotateX(&lt;value&gt;);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .rotate-x-\[\&lt\;value\>\] {
-    --tw-rotate-x: rotateX(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .rotate-x-\[\<value\>\] {
-    --tw-rotate-x: rotateX(<value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .rotate-y-\[\&lt\;value\&gt\;\] {
     --tw-rotate-y: rotateY(&lt;value&gt;);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .rotate-y-\[\&lt\;value\>\] {
-    --tw-rotate-y: rotateY(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .rotate-y-\[\&lt\;value\] {
-    --tw-rotate-y: rotateY(&lt;value);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .rotate-y-\[\<value\>\] {
-    --tw-rotate-y: rotateY(<value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .rotate-z-\[\&lt\;value\&gt\;\] {
     --tw-rotate-z: rotateZ(&lt;value&gt;);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .rotate-z-\[\&lt\;value\>\] {
-    --tw-rotate-z: rotateZ(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .rotate-z-\[\<value\>\] {
-    --tw-rotate-z: rotateZ(<value>);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .skew-\[\&lt\;value\&gt\;\] {
@@ -1187,38 +1361,12 @@
     --tw-skew-y: skewY(&lt;value&gt;);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .skew-\[\&lt\;value\>\] {
-    --tw-skew-x: skewX(&lt;value>);
-    --tw-skew-y: skewY(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .skew-\[\<value\>\] {
-    --tw-skew-x: skewX(<value>);
-    --tw-skew-y: skewY(<value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .skew-x-\[\&lt\;value\&gt\;\] {
     --tw-skew-x: skewX(&lt;value&gt;);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .skew-x-\[\&lt\;value\>\] {
-    --tw-skew-x: skewX(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .skew-x-\[\<value\>\] {
-    --tw-skew-x: skewX(<value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .skew-y-\[\&lt\;value\&gt\;\] {
     --tw-skew-y: skewY(&lt;value&gt;);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .skew-y-\[\&lt\;value\>\] {
-    --tw-skew-y: skewY(&lt;value>);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .skew-y-\[\<value\>\] {
-    --tw-skew-y: skewY(<value>);
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .transform {
@@ -1226,12 +1374,6 @@
   }
   .transform-\[\&lt\;value\&gt\;\] {
     transform: &lt;value&gt;;
-  }
-  .transform-\[\&lt\;value\>\] {
-    transform: &lt;value>;
-  }
-  .transform-\[\<value\>\] {
-    transform: <value>;
   }
   .transform-cpu {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -1244,12 +1386,6 @@
   }
   .animate-\[\&lt\;value\&gt\;\] {
     animation: &lt;value&gt;;
-  }
-  .animate-\[\&lt\;value\>\] {
-    animation: &lt;value>;
-  }
-  .animate-\[\<value\>\] {
-    animation: <value>;
   }
   .animate-bounce {
     animation: var(--animate-bounce);
@@ -1383,29 +1519,188 @@
   .break-after-right {
     break-after: right;
   }
+  .auto-cols-\[\&lt\;value\&gt\;\] {
+    grid-auto-columns: &lt;value&gt;;
+  }
+  .auto-cols-auto {
+    grid-auto-columns: auto;
+  }
+  .auto-cols-fr {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .auto-cols-max {
+    grid-auto-columns: max-content;
+  }
+  .auto-cols-min {
+    grid-auto-columns: min-content;
+  }
+  .grid-flow-col {
+    grid-auto-flow: column;
+  }
+  .grid-flow-col-dense {
+    grid-auto-flow: column dense;
+  }
+  .grid-flow-dense {
+    grid-auto-flow: dense;
+  }
+  .grid-flow-row {
+    grid-auto-flow: row;
+  }
+  .grid-flow-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .auto-rows-\[\&lt\;value\&gt\;\] {
+    grid-auto-rows: &lt;value&gt;;
+  }
+  .auto-rows-auto {
+    grid-auto-rows: auto;
+  }
+  .auto-rows-fr {
+    grid-auto-rows: minmax(0, 1fr);
+  }
+  .auto-rows-max {
+    grid-auto-rows: max-content;
+  }
+  .auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+  .grid-cols-\[\&lt\;value\&gt\;\] {
+    grid-template-columns: &lt;value&gt;;
+  }
   .grid-cols-\[repeat\(12\,auto\)\] {
     grid-template-columns: repeat(12,auto);
   }
-  .grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .grid-cols-none {
+    grid-template-columns: none;
+  }
+  .grid-cols-subgrid {
+    grid-template-columns: subgrid;
   }
   .grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
   }
+  .grid-rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+  .grid-rows-\[\&lt\;value\&gt\;\] {
+    grid-template-rows: &lt;value&gt;;
+  }
   .grid-rows-\[repeat\(23\,auto\)\] {
     grid-template-rows: repeat(23,auto);
+  }
+  .grid-rows-none {
+    grid-template-rows: none;
+  }
+  .grid-rows-subgrid {
+    grid-template-rows: subgrid;
   }
   .flex-col {
     flex-direction: column;
   }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .flex-nowrap {
+    flex-wrap: nowrap;
   }
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .place-content-around {
+    place-content: space-around;
+  }
+  .place-content-baseline {
+    place-content: baseline;
+  }
+  .place-content-between {
+    place-content: space-between;
+  }
+  .place-content-center {
+    place-content: center;
+  }
+  .place-content-end {
+    place-content: end;
+  }
+  .place-content-evenly {
+    place-content: space-evenly;
+  }
+  .place-content-start {
+    place-content: start;
+  }
+  .place-content-stretch {
+    place-content: stretch;
+  }
+  .place-items-baseline {
+    place-items: baseline;
+  }
+  .place-items-center {
+    place-items: center;
+  }
+  .place-items-end {
+    place-items: end;
+  }
+  .place-items-start {
+    place-items: start;
+  }
+  .place-items-stretch {
+    place-items: stretch;
+  }
+  .content-around {
+    align-content: space-around;
+  }
+  .content-baseline {
+    align-content: baseline;
+  }
+  .content-between {
+    align-content: space-between;
+  }
+  .content-center {
+    align-content: center;
+  }
+  .content-end {
+    align-content: flex-end;
+  }
+  .content-evenly {
+    align-content: space-evenly;
+  }
+  .content-normal {
+    align-content: normal;
+  }
+  .content-start {
+    align-content: flex-start;
+  }
+  .content-stretch {
+    align-content: stretch;
+  }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .items-stretch {
+    align-items: stretch;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-baseline {
+    justify-content: baseline;
   }
   .justify-between {
     justify-content: space-between;
@@ -1413,11 +1708,51 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .justify-normal {
+    justify-content: normal;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .justify-stretch {
+    justify-content: stretch;
+  }
+  .justify-items-center {
+    justify-items: center;
+  }
+  .justify-items-end {
+    justify-items: end;
+  }
+  .justify-items-normal {
+    justify-items: normal;
+  }
+  .justify-items-start {
+    justify-items: start;
+  }
+  .justify-items-stretch {
+    justify-items: stretch;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-\[\&lt\;value\&gt\;\] {
+    gap: &lt;value&gt;;
+  }
+  .-space-y-px {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(-1px * var(--tw-space-y-reverse));
+      margin-block-end: calc(-1px * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -1425,6 +1760,85 @@
       margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
+  }
+  .space-y-\[\&lt\;value\&gt\;\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(&lt;value&gt; * var(--tw-space-y-reverse));
+      margin-block-end: calc(&lt;value&gt; * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-\[\&lt\;value\>\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(&lt;value> * var(--tw-space-y-reverse));
+      margin-block-end: calc(&lt;value> * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-\[\<value\>\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(<value> * var(--tw-space-y-reverse));
+      margin-block-end: calc(<value> * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-px {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(1px * var(--tw-space-y-reverse));
+      margin-block-end: calc(1px * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-reverse {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 1;
+    }
+  }
+  .gap-x-\[\&lt\;value\&gt\;\] {
+    column-gap: &lt;value&gt;;
+  }
+  .-space-x-px {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(-1px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(-1px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[\&lt\;value\&gt\;\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(&lt;value&gt; * var(--tw-space-x-reverse));
+      margin-inline-end: calc(&lt;value&gt; * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[\&lt\;value\>\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(&lt;value> * var(--tw-space-x-reverse));
+      margin-inline-end: calc(&lt;value> * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[\<value\>\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(<value> * var(--tw-space-x-reverse));
+      margin-inline-end: calc(<value> * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-px {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(1px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(1px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-reverse {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 1;
+    }
+  }
+  .gap-y-\[\&lt\;value\&gt\;\] {
+    row-gap: &lt;value&gt;;
   }
   .divide-y {
     :where(& > :not(:last-child)) {
@@ -1434,6 +1848,54 @@
       border-top-width: calc(1px * var(--tw-divide-y-reverse));
       border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     }
+  }
+  .place-self-auto {
+    place-self: auto;
+  }
+  .place-self-center {
+    place-self: center;
+  }
+  .place-self-end {
+    place-self: end;
+  }
+  .place-self-start {
+    place-self: start;
+  }
+  .place-self-stretch {
+    place-self: stretch;
+  }
+  .self-auto {
+    align-self: auto;
+  }
+  .self-baseline {
+    align-self: baseline;
+  }
+  .self-center {
+    align-self: center;
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .self-start {
+    align-self: flex-start;
+  }
+  .self-stretch {
+    align-self: stretch;
+  }
+  .justify-self-auto {
+    justify-self: auto;
+  }
+  .justify-self-center {
+    justify-self: center;
+  }
+  .justify-self-end {
+    justify-self: flex-end;
+  }
+  .justify-self-start {
+    justify-self: flex-start;
+  }
+  .justify-self-stretch {
+    justify-self: stretch;
   }
   .overflow-auto {
     overflow: auto;
@@ -1465,6 +1927,9 @@
   .overflow-y-clip {
     overflow-y: clip;
   }
+  .overflow-y-hidden {
+    overflow-y: hidden;
+  }
   .overflow-y-scroll {
     overflow-y: scroll;
   }
@@ -1489,12 +1954,6 @@
   }
   .bg-\[\&lt\;value\&gt\;\] {
     background-color: &lt;value&gt;;
-  }
-  .bg-\[\&lt\;value\>\] {
-    background-color: &lt;value>;
-  }
-  .bg-\[\<value\>\] {
-    background-color: <value>;
   }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
@@ -2274,25 +2733,9 @@
     --tw-gradient-position: &lt;value&gt;;
     background-image: conic-gradient(var(--tw-gradient-stops,&lt;value&gt;));
   }
-  .bg-conic-\[\&lt\;value\>\] {
-    --tw-gradient-position: &lt;value>;
-    background-image: conic-gradient(var(--tw-gradient-stops,&lt;value>));
-  }
-  .bg-conic-\[\<value\>\] {
-    --tw-gradient-position: <value>;
-    background-image: conic-gradient(var(--tw-gradient-stops,<value>));
-  }
   .bg-linear-\[\&lt\;value\&gt\;\] {
     --tw-gradient-position: &lt;value&gt;;
     background-image: linear-gradient(var(--tw-gradient-stops,&lt;value&gt;));
-  }
-  .bg-linear-\[\&lt\;value\>\] {
-    --tw-gradient-position: &lt;value>;
-    background-image: linear-gradient(var(--tw-gradient-stops,&lt;value>));
-  }
-  .bg-linear-\[\<value\>\] {
-    --tw-gradient-position: <value>;
-    background-image: linear-gradient(var(--tw-gradient-stops,<value>));
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -2334,14 +2777,6 @@
     --tw-gradient-position: &lt;value&gt;;
     background-image: radial-gradient(var(--tw-gradient-stops,&lt;value&gt;));
   }
-  .bg-radial-\[\&lt\;value\>\] {
-    --tw-gradient-position: &lt;value>;
-    background-image: radial-gradient(var(--tw-gradient-stops,&lt;value>));
-  }
-  .bg-radial-\[\<value\>\] {
-    --tw-gradient-position: <value>;
-    background-image: radial-gradient(var(--tw-gradient-stops,<value>));
-  }
   .bg-none {
     background-image: none;
   }
@@ -2349,39 +2784,13 @@
     --tw-gradient-from: &lt;value&gt;;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .from-\[\&lt\;value\>\] {
-    --tw-gradient-from: &lt;value>;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-\[\<value\>\] {
-    --tw-gradient-from: <value>;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .via-\[\&lt\;value\&gt\;\] {
     --tw-gradient-via: &lt;value&gt;;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
-  .via-\[\&lt\;value\>\] {
-    --tw-gradient-via: &lt;value>;
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-  .via-\[\<value\>\] {
-    --tw-gradient-via: <value>;
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
   .to-\[\&lt\;value\&gt\;\] {
     --tw-gradient-to: &lt;value&gt;;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\&lt\;value\>\] {
-    --tw-gradient-to: &lt;value>;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\<value\>\] {
-    --tw-gradient-to: <value>;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .box-decoration-clone {
@@ -2460,9 +2869,6 @@
   }
   .bg-repeat-space {
     background-repeat: space;
-  }
-  .bg-repeat-x {
-    background-repeat: repeat-x;
   }
   .bg-repeat-y {
     background-repeat: repeat-y;
@@ -2584,11 +2990,35 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-\[\&lt\;value\&gt\;\] {
+    padding: &lt;value&gt;;
+  }
+  .p-\[\&lt\;value\>\] {
+    padding: &lt;value>;
+  }
+  .p-\[\<value\>\] {
+    padding: <value>;
+  }
+  .p-px {
+    padding: 1px;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-\[\&lt\;value\&gt\;\] {
+    padding-inline: &lt;value&gt;;
+  }
+  .px-\[\&lt\;value\>\] {
+    padding-inline: &lt;value>;
+  }
+  .px-\[\<value\>\] {
+    padding-inline: <value>;
+  }
+  .px-px {
+    padding-inline: 1px;
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -2602,11 +3032,65 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-\[\&lt\;value\&gt\;\] {
+    padding-block: &lt;value&gt;;
+  }
+  .py-\[\&lt\;value\>\] {
+    padding-block: &lt;value>;
+  }
+  .py-\[\<value\>\] {
+    padding-block: <value>;
+  }
+  .py-px {
+    padding-block: 1px;
+  }
+  .ps-\[\&lt\;value\&gt\;\] {
+    padding-inline-start: &lt;value&gt;;
+  }
+  .ps-\[\&lt\;value\>\] {
+    padding-inline-start: &lt;value>;
+  }
+  .ps-\[\<value\>\] {
+    padding-inline-start: <value>;
+  }
+  .ps-px {
+    padding-inline-start: 1px;
+  }
+  .pe-px {
+    padding-inline-end: 1px;
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-\[\&lt\;value\&gt\;\] {
+    padding-top: &lt;value&gt;;
+  }
+  .pt-\[\&lt\;value\>\] {
+    padding-top: &lt;value>;
+  }
+  .pt-\[\<value\>\] {
+    padding-top: <value>;
+  }
+  .pt-px {
+    padding-top: 1px;
+  }
+  .pr-\[\&lt\;value\&gt\;\] {
+    padding-right: &lt;value&gt;;
+  }
+  .pr-\[\&lt\;value\>\] {
+    padding-right: &lt;value>;
+  }
+  .pr-\[\<value\>\] {
+    padding-right: <value>;
+  }
+  .pr-\[value\>\] {
+    padding-right: value>;
+  }
+  .pr-px {
+    padding-right: 1px;
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -2614,11 +3098,35 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-\[\&lt\;value\&gt\;\] {
+    padding-bottom: &lt;value&gt;;
+  }
+  .pb-\[\&lt\;value\>\] {
+    padding-bottom: &lt;value>;
+  }
+  .pb-\[\<value\>\] {
+    padding-bottom: <value>;
+  }
+  .pb-px {
+    padding-bottom: 1px;
+  }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-\[\&lt\;value\&gt\;\] {
+    padding-left: &lt;value&gt;;
+  }
+  .pl-\[\&lt\;value\>\] {
+    padding-left: &lt;value>;
+  }
+  .pl-\[\<value\>\] {
+    padding-left: <value>;
+  }
+  .pl-px {
+    padding-left: 1px;
   }
   .text-center {
     text-align: center;
@@ -2778,12 +3286,6 @@
   .opacity-\[\&lt\;value\&gt\;\] {
     opacity: &lt;value&gt;;
   }
-  .opacity-\[\&lt\;value\>\] {
-    opacity: &lt;value>;
-  }
-  .opacity-\[\<value\>\] {
-    opacity: <value>;
-  }
   .bg-blend-color {
     background-blend-mode: color;
   }
@@ -2902,24 +3404,8 @@
     --tw-shadow: &lt;value&gt;;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-\[\&lt\;value\>\] {
-    --tw-shadow: &lt;value>;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[\&value\>\] {
-    --tw-shadow: &value>;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-\[0_4px_8px_rgba\(0\,0\,0\,0\.2\)\] {
     --tw-shadow: 0 4px 8px var(--tw-shadow-color, rgba(0,0,0,0.2));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[\<value\>\] {
-    --tw-shadow: <value>;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[value\>\] {
-    --tw-shadow: value>;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-lg {
@@ -2956,14 +3442,6 @@
   }
   .inset-shadow-\[\&lt\;value\&gt\;\] {
     --tw-inset-shadow: inset &lt;value&gt;;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .inset-shadow-\[\&lt\;value\>\] {
-    --tw-inset-shadow: inset &lt;value>;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .inset-shadow-\[\<value\>\] {
-    --tw-inset-shadow: inset <value>;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .inset-shadow-none {
@@ -3341,16 +3819,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-\[\&lt\;value\>\] {
-    transition-property: &lt;value>;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-\[\<value\>\] {
-    transition-property: <value>;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -3388,12 +3856,6 @@
   .delay-\[\&lt\;value\&gt\;\] {
     transition-delay: &lt;value&gt;;
   }
-  .delay-\[\&lt\;value\>\] {
-    transition-delay: &lt;value>;
-  }
-  .delay-\[\<value\>\] {
-    transition-delay: <value>;
-  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -3402,25 +3864,9 @@
     --tw-duration: &lt;value&gt;;
     transition-duration: &lt;value&gt;;
   }
-  .duration-\[\&lt\;value\>\] {
-    --tw-duration: &lt;value>;
-    transition-duration: &lt;value>;
-  }
-  .duration-\[\<value\>\] {
-    --tw-duration: <value>;
-    transition-duration: <value>;
-  }
   .ease-\[\&lt\;value\&gt\;\] {
     --tw-ease: &lt;value&gt;;
     transition-timing-function: &lt;value&gt;;
-  }
-  .ease-\[\&lt\;value\>\] {
-    --tw-ease: &lt;value>;
-    transition-timing-function: &lt;value>;
-  }
-  .ease-\[\<value\>\] {
-    --tw-ease: <value>;
-    transition-timing-function: <value>;
   }
   .ease-in {
     --tw-ease: var(--ease-in);
@@ -3570,6 +4016,11 @@
       rotate: calc(0deg * -1);
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -3625,6 +4076,16 @@
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:justify-center {
@@ -3809,6 +4270,11 @@
   initial-value: skewY(0);
 }
 @property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
